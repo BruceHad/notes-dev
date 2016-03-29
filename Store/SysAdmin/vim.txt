@@ -1,0 +1,45 @@
+# Vim
+
+Vim has two basic modes.
+
+* Insert - i - For writing text.
+* Command - esc - For entering command that navigate and edit the text.
+
+Use I and escape to switch between the two. There are two additional modes.
+
+* Visual - v
+* Block visual - Ctrl-V
+
+These let you select blocks of text for further manipulation.
+
+## Basics
+
+hjkl are used in Command mode to move the cursor. Equate to Left, Down, Up and Right.
+You can also navigate the text using w, b, e which move the cursor to the next word, beginning of word and end of word.
+0 - Moves to beginning of line.
+$ - Moves to end of line.
+fd - finds the character d in the line of text.
+% - finds matching parens.
+* - Finds next occurence of current word
+# - Previous occurence of current word
+gg - Beginning of file
+G - End of File
+3G - Move to line 3
+/ - Search for text.
+    n - next occurence
+    N - previous occurence
+o - Insert line below and change to insert mode.
+O - Insert line above and change to insert mode.
+x - Backspace
+X - Del
+d - Delete (Cut) Command. Copies to clipboard apparently.
+    dw - Deletes word
+p - Paste
+i - Changes to insert mode.
+    30i-esc - insert the - character 30 times.
+. - repeat command.
+
+## Advance Configuration
+
+The vimrc file contains optional runtime configuration settings to initialize Vim when it starts. On Unix based systems, the file is named .vimrc, while on Windows systems it is named _vimrc.
+

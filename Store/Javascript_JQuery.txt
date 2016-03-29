@@ -1,0 +1,53 @@
+# JQuery
+
+Jquery is a javascript library that abstracts away the differences between browsers and provides a shorthand for manipulating the Dom, using Ajax type queries, and doing fancy effects and animations.
+
+## Basics
+
+JQuery uses $ as a shorthand for any JQuery method call, of which there are apparently two types:
+
+1. Methods that run on collections using $.fn.
+2. Utility methods such as $.data and $.ajax that don't rely on collections.
+
+## Document Ready
+
+The DOM cannot be queried until the full thing has loaded, so it's important to not make any calls until the document has loaded.
+
+    $(document).ready(function(){
+        // jquery code
+    });
+
+## Selectors
+
+In JQuery you can use selectors to identify elements. 
+
+    $("#foo")
+
+This identifies the element with id="foo". 
+
+You can also use the .find() and .filter() methods to give you more control over your collections.
+
+You can use this to apply changes to your collection.
+
+    $("#foo").css("background-color", "red");
+
+If you want to make multiple changes to the same element, you can, if you want, combine them in one call.
+
+    $("#foo").css({
+        "background-color": "red",
+        "font-weight": bold"
+    });
+
+If you are doing a lot of different manipulation on an element, it is recommended that the selector is bound to a variable, so that the same dom query isn't called multiple times.
+
+    var foo = $("#foo");
+
+You can get a similar benefit from chaining all the calls together.
+
+    $("#foo").css("background-color", "red").appendTo("#bar");
+
+Not sure I like this. It's difficult to read and troubleshoot.
+
+## Ajax
+
+

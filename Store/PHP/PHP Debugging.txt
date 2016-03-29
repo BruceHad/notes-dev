@@ -1,0 +1,38 @@
+## Switch on Error Reporting
+
+I believe error reporting can be switched on in the file that you are working on or can be configured in the php.ini file (this is probably the best option as you can have it switched on for the test server but off for the live server).
+
+The following code will switch on Error reporting on the page you are working.
+
+    ini_set('display_errors',1);
+    error_reporting(E_ALL|E_STRICT);
+
+Alternatively edit the php.ini file.
+
+    /etc/php5/apache2/php.ini
+
+And stick this somewhere:
+
+    error_reporting = E_ALL & E_STRICT
+
+
+## About Errors
+
+* Syntax errors are known as Parse Errors. 
+* Fatal Errors cause the program to fail. The syntax is correct, in that PHP understands the instruction, it just cannot comply.
+* Warning Errors can be supressed as they are not fatal, but they are warning you that something might be wrong.
+* Notices are other minor errors that the code can deal with.
+
+## var_dump()
+
+var_dump() is a useful function that prints out a variable or expression in a human readable way. I've been using print_r() but var_dump() might work better as it includes a lot more information, such as the type.
+
+## Debugging Tools
+
+FirePHP
+
+-----------------
+
+ * [Debugging techniques for PHP programmers](http://www.ibm.com/developerworks/library/os-debug/)(IBM)
+ * [PHP Error Reporting](http://www.phpfunctionalism.com/config/error-reporting/)
+ * {How to Debug in PHP](http://thinkvitamin.com/code/how-to-debug-in-php/)

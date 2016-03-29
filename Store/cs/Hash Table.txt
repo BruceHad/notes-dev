@@ -1,0 +1,72 @@
+# Hash Tables
+
+## What is it?
+
+A hash function is any algorithm that maps large data sets of variable length, called keys, to smaller data sets of a fixed length. For example, a person's name, having a variable length, could be hashed to a single integer. The values returned by a hash function are called hash values, hash codes, hash sums, checksums or simply hashes.
+
+A hash table is a data structure that uses a hash function to map identifying values, known as keys (e.g., a person's name), to their associated values (e.g., their telephone number). Thus, a hash table implements an associative array. 
+
+In Python this is implemented in the Dictionary data structure.
+
+The hash function is used to transform the key into the index (the hash) of an array element (the slot or bucket) where the corresponding value is to be sought.
+
+Ideally, the hash function should map each possible key to a unique slot index, but this ideal is rarely achievable in practice. Instead, most hash table designs assume that hash collisions—different keys that map to the same hash value—will occur and must be accommodated in some way.
+
+In a well-dimensioned hash table, the average cost (number of instructions) for each lookup is independent of the number of elements stored in the table. Many hash table designs also allow arbitrary insertions and deletions of key-value pairs, at constant average cost per operation.
+
+In many situations, hash tables turn out to be more efficient than other table lookup structures. For this reason, they are widely used in many kinds of computer software, particularly for associative arrays, database indexing, caches, and sets.
+
+At the heart of the hash table algorithm is an array of items; this array is often simply called the hash table. Hash table algorithms calculate an index based on the data item's key and the length of the array. The index is used to find or insert the data into the array. The implementation of this calculation is the hash function, f:
+
+    index = f(key, arrayLength)
+
+The hash function calculates an index into the array from the data key and arrayLength (the size of the array). For assembly language or other low-level programs, a trivial hash function can often create an index with just one or two inline machine instructions.
+
+## How do you implement one in Python?
+
+We'll pretend Python didn't provide a dictionary (hash table) data structure built-in to the language, and we'll implement one with classes.
+
+First, let's consider the nature of a hash table. One way to look at it is that hash tables are like arrays, but each element is referred to not with an integer index, but with a key of type string (generally). 
+
+List:
+
+0   Red
+1   Green
+2   Blue
+
+In this case we refer to the entry 'Red' by it's index list[0].
+
+Hash Table (Dictionary):
+
+rd  Red
+gr  Green
+bl  Blue
+
+In this case the entry 'Red' is accessed with the key value hashtable['rd'].
+
+Implement this as classes in Python.
+
+We implement a hash table with two classes. The class KeyValue will represent each entry of the hash table, and the class HashTable will represent the hash table itself.
+
+    class KeyValue:
+        def __init__(self,key,value):
+            self.key=key
+            self.value=value
+        
+    class HashTable:
+        TABLESIZE=20
+        def __init__(self)
+        self.list=[0]*self.TABLESIZE
+        def get(self,key):
+            # ...   
+        def set(self,key,value):
+            # ...
+
+
+
+## How do you implement one in PHP?
+
+--------
+
+* [Hash Table](http://en.wikipedia.org/wiki/Hash_table)
+* [Hash Tables: Implementation](https://sites.google.com/site/usfcomputerscience/hash-tables-imp)

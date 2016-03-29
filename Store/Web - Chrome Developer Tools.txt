@@ -1,0 +1,22 @@
+Chrome has a number of built in developer tools that help troubleshoot your design.
+
+## Javascript Performance
+
+Check the baseline perfomance using the [Speed Tracer](https://developers.google.com/web-toolkit/speedtracer/), which visualises metrics. Speed Tracer is a seperate app so has to be installed.
+
+One installed there should be a stopwatch icon available. Clciking on this opens the speed tracer on the current website. Refreshing the page run the speed trace, from which you can view network(appears to be downloading the resources) and events (building of the page in the browser).
+
+The network view highlights potential problems with the resources. For example, when I tested ELCA on the speed trace, it warned me that none of the resources were compressed prior to download and most of them didn't have an expiration date, therefore were not being cached.
+
+For Javascript though, we are more interested in the Events sections, which tells us how long it took to build the page, run javascript etc.
+
+Speed Tracer gives us a baseline from which to work, but to figure out what is running slow and why, we need other tools.
+
+### Profilers
+
+Chrome has three profilers built in (Hit F12 and select Profiles):
+
+ * Javascript CPU profile
+ * CSS Selector Profile
+ * Heap Snapshot (memory usage)
+

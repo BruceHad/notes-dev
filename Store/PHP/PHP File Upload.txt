@@ -1,0 +1,41 @@
+# PHP Post Method Upload
+
+This lets you upload text and binary files.
+
+In the form tag you must specify the enctype:
+
+    enctype = "multipart/formdata"
+
+You can also specify the maximum file type by entering a hidden form field (prior to the upload field).
+
+    <input type="hidden" name="MAX_FILE_SIZE" value="30000" />
+
+Value is measured in bytes. This provides nice user side validation, but shouldn't be trusted.
+
+The global S_FILES variable contains all the uploaded file information.
+
+$_FILE['userfile']['name'] -- original file name.
+['type'] -- mime type.
+['size'] -- fiel size in bytes.
+['tmp_name'] -- new, temporary name.
+['error'] -- possible error codes.
+
+Files will be stored in the servers default temporary directory (apparently /tmp/ on linux). This location can be overridden in the php.ini file.
+
+    upload_tmp_dir = /your_www/tmp/
+
+Or you can apparently amend it in the script.
+
+    ini_set('upload_tmp_dir', '/your_www/tmp/');
+
+## Working Example
+
+Uploading images is a common use case, so I'm not about to re-invent the wheel here. I can use the class.upload.php script.
+
+
+
+----------
+
+* http://www.php.net/manual/en/features.file-upload.post-method.php
+* http://www.verot.net/php_class_upload.htm
+

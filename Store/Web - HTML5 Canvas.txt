@@ -1,0 +1,151 @@
+# Canvas
+
+Canvas is a new HTML element for creating a drawing area. The canvas element only generally take an ID, Width and Height attributes, while the actual drawing is created by Javascript.
+
+    <canvas id="tutorial" width="150" height="150">
+        Alternative content
+    </canvas>
+
+The first step required to allow Javascript to draw on the canvas is to get the context.
+
+    var canvas = document.getElementById('tutorial');
+    var ctx = canvas.getContext('2d');
+
+Once it has the context it can start drawing paths or rectangles.
+
+## The Grid
+
+Drawing are placed on a grid. The grid starts at the top left corner of the canvas, and is measured by x,y co-ordinates.
+
+## Rectangles
+
+Rectangles are the only primitives available.
+
+* fillRect(x,y,w,h)
+* strokeRect(x,y,w,h)
+* clearRect(x,y,w,h)
+
+## Paths
+
+All other shapes can be drawn with paths. Drawing paths takes the following form:
+
+    beginPath(); # Creates an empty path
+    moveTo(x,y); # Moves path to a new point without drawing anything.
+    lineTo(x,y); # Draws line to given point.
+    closePath(); # Joins path to start point.
+    stroke(); # Draws line along path.
+    fill(); # Fills area inside path.
+
+You can also draw things like arcs and beziers and adjust line/fill width, styles and colors.
+
+A simple example.
+
+    <!DOCTYPE html>
+    
+    <html>
+    
+    <head>
+    
+      <title>Canvas Tutorial</title>
+    
+        <script type="text/javascript">
+          function draw(){
+            var canvas = document.getElementById('tutorial');
+            if (canvas.getContext){
+                var ctx = canvas.getContext('2d');
+        
+                ctx.fillStyle = "rgb(200,0,0)";
+                ctx.fillRect (20, 20, 55, 50);
+                ctx.fillStyle = "rgba(0, 0, 200, 0.5)";
+                ctx.fillRect (30, 30, 55, 50);
+                
+                ctx.strokeStyle = "rgb(0,0,0)";
+                ctx.fillStyle = "rgba(255,255,255, 0.8)";
+                ctx.lineWidth = 5;
+                ctx.beginPath();  
+                ctx.moveTo(10,10);  
+                ctx.lineTo(10,140);  
+                ctx.lineTo(140,140);
+                ctx.closePath();
+                ctx.fill();
+                ctx.stroke();
+            }
+          }
+        </script>
+    
+      <style type="text/css">
+        canvas { border: 1px solid black; }
+      </style>
+    </head>
+    
+    <body onload="draw();">
+    	<canvas id="tutorial" width="150" height="150">
+    		<p>Canvas cannot be displayed.</p>
+    	</canvas>
+    </body>
+    </html>
+
+## Animating Lines
+
+Since we're using script to control canvas elements it's also very easy to make (interactive) animations. Probably the biggest limitation is that once a shape gets drawn it stays that way. If we need to move it we have to redraw it and everything that was drawn before it. It takes a lot of time to redraw complex frames and the performance depends highly on the speed of the computer it's running on.
+
+Animation is frame based:
+
+ 1. Clear the canvas.
+ 2. Save the canvas state (i.e. so you can restore unchange elements).
+ 3. Draw animated shapes.
+ 4. Restore canvas state before drawing new frame.
+
+Animation can be controlled over time using the setInterval method, which will execute a piece of code repeatedly, after a given delay, basically creating an animation loop.
+
+    setInterval("animateShape()",83);
+
+This will execute the function called animateShape() every 83 milliseconds, which is approximately 12 frames per second.
+
+    var sun = new Image();
+    var moon = new Image();
+    var earth = new Image();
+    function init(){
+      sun.src = 'images/sun.png';
+      moon.src = 'images/moon.png';
+      earth.src = 'images/earth.png';
+      setInterval(draw,100);
+    }
+
+    function draw() {
+      var ctx = document.getElementById('canvas').getContext('2d');
+
+      ctx.globalCompositeOperation = 'destination-over';
+      ctx.clearRect(0,0,300,300); // clear canvas
+
+      ctx.fillStyle = 'rgba(0,0,0,0.4)';
+      ctx.strokeStyle = 'rgba(0,153,255,0.4)';
+      ctx.save();
+      ctx.translate(150,150);
+
+      // Earth
+      var time = new Date();
+      ctx.rotate( ((2*Math.PI)/60)*time.getSeconds() + ((2*Math.PI)/60000)*time.getMilliseconds() );
+      ctx.translate(105,0);
+      ctx.fillRect(0,-12,50,24); // Shadow
+      ctx.drawImage(earth,-12,-12);
+
+      // Moon
+      ctx.save();
+      ctx.rotate( ((2*Math.PI)/6)*time.getSeconds() + ((2*Math.PI)/6000)*time.getMilliseconds() );
+      ctx.translate(0,28.5);
+      ctx.drawImage(moon,-3.5,-3.5);
+      ctx.restore();
+
+      ctx.restore();
+      
+      ctx.beginPath();
+      ctx.arc(150,150,105,0,Math.PI*2,false); // Earth orbit
+      ctx.stroke();
+     
+      ctx.drawImage(sun,0,0,300,300);
+    }
+
+-------------
+ * https://developer.mozilla.org/en/Canvas_tutorial
+ * https://developer.mozilla.org/en/Canvas_tutorial/Basic_animations

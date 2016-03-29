@@ -1,0 +1,48 @@
+# Float and Position
+
+Tagged: wed design reprise
+
+[CSS Grids](http://dev.w3.org/csswg/css3-grid-align) is still in draft so we can safely presume it will be a few years before significant support is available. In the meantime, standard DIV and CSS will have to suffice. I'll be investigating grids shortly; but first, a bit of groundwork.
+
+## Floats
+
+Floats are boxes of content that can be shifted to the side of their container. They allow surrounding content, unless prohibited by the Clear property, to flow around the box.
+
+Float can take one of: left, right, inherit or none. Left floats to the left etc.
+
+In the normal flow, block elements stack one on top of each other. Floats remove the block from that stack and push it to the far side of the containing element, where space permits.
+
+## Clear
+
+The clear property can take one of: left, right, both, none and inherit.
+
+Clear forced a block element below a previous floated element, where without the clear it would have fitted in beside it. This wasn't intuitive to me, but clear:left will place the block below any left floated blocks, while clear right does the opposite. Both will clear any floated block regardless of side.
+
+## Collapsing
+
+As stated, floats remove the block from the normal flow of the document. Therefore containing boxes need not expand vertically to surround any floating elements within them, so a floated block may stick out from the bottom of it's container. This is known as collapsing the container. 
+
+While this is correct, it's is often not how we want the container to behave. So there are various methods to force the container to expand. My preference is to use a empty clearing div. e.g. <div style="clear:both"></div> just before the closing tag for the container. This isn't elegant but works consistently across all browsers I've tried.
+
+Alternatives include:
+
+1. Using the :after psuedo selecter to generate a clearing div via css. The div can be hidden to prevent it appearing to users.
+
+2. Floating the container will apparently force it to expand to enclose all floated child elements.
+
+use with discretion.
+
+## Positioning
+
+The CSS position property can take one of: static, relative, absolute, fixed or inherit.
+
+Static is the default value. Elements will flow as normal (unless floated).
+
+Relative is similar to Static, but allows you to offset the position relative to the normal position using top, bottom, left or right properties. 
+
+Absolute takes the box out of the flow and allows position to be set by top, bottom, left or right, relative to the containing box.
+
+Fixed takes the box out of the flow and allows position to be set by top, bottom, left or right, relative to the viewport. A fixed position doesn't scroll, it just remains in the same position regardless.
+
+
+

@@ -1,0 +1,860 @@
+##INTRO
+
+This module includes the following lessons:
+
+Lesson 1: An Introduction to Computer Technology
+Lesson 2: Computing Environments
+Lesson 3: Computer Applications
+Lesson 4: What to Do Next?
+
+
+
+##LESSON 1
+
+
+###WHAT IS A COMPUTER?
+
+A computer allows users to store and process information quickly and automatically.
+
+A computer is a programmable machine. 
+
+It allows the user to store information and then 'process' that information or carry out actions with the information.
+
+ * Information: Knowledge that is communicated.
+ * Data: The representation of information in a formalised manner suitable for communication, interpretation and processing, generally by a computer system. 
+ * Raw data: refers to unprocessed information.
+
+Computers can be generally classified by size and power, although there can be considerable overlap.
+
+Mainframe
+
+Mainframe computers are large-sized, powerful multi-user computers that can support concurrent programs. That means, they can perform different actions or 'processes' at the same time. Mainframe computers can be used by as many as hundreds or thousands of users at the same time.
+
+IBM dominates the mainframe market, against Unisys, Hitachi and Hewlett Packard.
+
+Mainframes were big business in the 1950s to the 1970s. In the 1990s they started to be replaced by servers based on micro-computer technology, that were cheaper and more flexible. 
+
+However, cheap networking and the increased need for massive batch processing, as businesses move to automate a lot of their processing, has led to a resurgence in mainframe demand.
+
+[Note: Supercomputers are high-performance machines used for scientific and engineering problems that need a lot of power (processing speed and memory). Mainframes, on the other hand, are used in businesses that need reliability and to handle multiple transaction concurrently.]
+
+
+Mini-computers are mid-sized multi-processing computers. Again, they can perform several actions at the same time and can support from 4 to 200 users simultaneously. In recent years the distinction between mini-computers and small mainframes has become blurred. Often the distinction depends upon how the manufacturer wants to market its machines. Organisations may use a mini-computer for such tasks as managing the information in a small financial system or maintaining a small database of information about registrations or applications.
+
+Workstations are powerful, single-user computers. They have the capacity to store and process large quantities of data, but they are only used by one person at a time. However, workstations are typically linked together to form a computer network called a local area network, which means that several people, such as staff in an office, can communicate with each other and share electronic files and data.
+
+A workstation is similar to a personal computer but is more powerful and often comes with a higher-quality monitor. In terms of computing power, workstations lie in between personal computers and mini-computers. 
+
+Workstations commonly support applications that require relatively high-quality graphics capabilities and a lot of memory, such as desktop publishing, software development and engineering applications.
+
+Personal computers (PCs), also called microcomputers, are the most popular type of computer in use today. The PC is a small-sized, relatively inexpensive computer designed for an individual user.
+
+
+
+###WHAT ARE THE COMPONENTS OF A COMPUTER?
+
+-nd for 'physical memory', which refers to the actual chips capable of holding data. Some computers also use 'virtual memory', which expands physical memory onto a hard drive.
+
+The main type of memory and the most familiar to users is random access memory (RAM). RAM is the same as main memory. A computer can both write data into RAM and read data from RAM.
+
+Every time a user turns on his or her computer, a set of operating instructions is copied from the hard disk into RAM. These instructions, which help control basic computer functions, remain in RAM until the computer is turned off. Most RAM is volatile, which means that it requires a steady flow of electricity to maintain its contents. As soon as the power is turned off, whatever data was in RAM disappears. The contents of RAM are necessary for the computer to process data. The results of the processing are kept temporarily in RAM until they are needed again or until they are saved onto the hard disk or other storage device.
+
+Today the storage capacity of RAM is measured in megabytes (MB). PCs (microcomputers) typically have between 16 and 64 MB of RAM, which means they can hold between 16 and 64 million bytes of data (a standard A4 page of text typically holds about 2,000 bytes or characters of text).
+
+Other types of memory include
+
+ * ROM (read only memory): unlike RAM, ROM is non-volatile and only permits the user to read data. Computers almost always contain a small amount of read-only memory that holds instructions for starting up the computer.
+
+ * PROM (programmable read-only memory): a PROM is a memory chip on which you can store a program. Once the PROM has been used, you cannot wipe it clean and use it to store something else. Like ROMs, PROMs are non-volatile.
+ * EPROM (erasable programmable read-only memory): an EPROM is a special type of PROM that can be erased by exposing it to ultraviolet light.
+ * EEPROM (electrically erasable programmable read-only memory): an EEPROM is a special type of PROM that can be erased by exposing it to an electrical charge. Activity 5
+
+Ask the person or persons responsible for computer management in your organisation how much random access memory (RAM) your organisation's computer has. Find out if they think the computer has enough RAM and why or why not.
+
+HOW ARE DATA STORED?
+
+It is very important to distinguish between memory, which refers to the circuitry that has a direct link to the computer processor, and the storage, which refers to media such as disks that are not directly linked to the processor. Remember, a storage device is anything that is used to store computer data. Floppy disks, hard disks, optical disks, CDs and magnetic tapes are all types of storage device.
+
+Physical storage refers to how data are actually kept on the storage disk. The most commonly used medium for storage is magnetic storage. With magnetic storage the computer stores data on disks and tape by magnetising selected particles of an oxide-based surface coating. The particles retain their magnetic orientation until that orientation is changed. Thus magnetic disks and tapes are modifiable storage media. The two most popular types of magnetic storage media are hard disks and diskettes. Magnetic tape provides a third type of magnetic storage, and optical disk is a new storage medium. Following is a discussion of each; the definitions included earlier are repeated.
+
+Hard drive or hard disk storage provides faster access to files than a diskette.
+
+Hard drive: The storage area within the computer itself, where megabytes of space are available to store bits of information. Also known as a hard disk.
+
+A hard disk platter is a flat, rigid disk made of aluminium or glass and coated with a magnetic oxide. A hard disk consists of one or more platters and their read-write heads. A read-write head is the device that reads the data from the disk platter into the computer. It also records (or 'writes') data onto the platters. Hard disk platters in microcomputers are typically 3� inches (about 10 centimetres) in diameter: the same size as the circular mylar disk in a diskette. However, the storage capacity of a hard disk far exceeds that of a floppy disk. Also, the access time of a hard disk is significantly faster than a diskette. Unlike diskettes, which begin to rotate when one requests data, hard disks are continually in motion, so there is no delay as the disk spins up to speed. Like diskettes, hard disks provide random access to files by positioning the read-write head over the sector that contains the requested data.
+
+Diskette. A small, removable, flexible mylar plastic disk covered with a thin layer of a magnetisable substance, onto which digital data can be recorded and stored. Also known as a floppy disk.
+
+Diskettes get another name -- floppy disk -- from the thin mylar disk. If one cuts open the disk casing (not recommended because the disk will be ruined) one would see that the mylar disk inside is thin and "floppy". Diskettes are also called floppies. Although today's microcomputers typically use 3� inch (about 10 centimetre) disks, you may still find 5� inch (about 15 centimetre) disks that were popular many years ago. Finding a disk drive to read 5� inch disks may be very difficult.
+
+Diskettes are generally used for transporting or shipping data files or for making duplicate copies of data files for back-up purposes. The storage capacity of a diskette varies but is considerably smaller than that of a hard drive.
+
+Since the 1960s, magnetic tape has been a popular form of mainframe computer storage.
+
+Magnetic tape: A continuous plastic strip covered with magnetic oxide; the tape is divided into parallel tracks onto which data may be recorded by selectively magnetising parts of the surface, or spots, in each of the tracks. The data can then be stored and reused.
+
+When IBM introduced its first microcomputer in 1981, the legacy of tape storage continued in the form of a cassette tape drive, similar to those used for audio recording and playback. Using tape as a primary storage device, however, instead of a hard disk is slow and inconvenient because tape requires sequential access rather than random access.
+
+Sequential access means that data is stored and read as a sequence of bytes along the length of the tape. To find a file stored on a microcomputer tape storage device, one has to advance the tape to the appropriate location of the file, then wait for the computer to slowly read each byte until it finds the beginning of the file. Like an audio cassette, for example, a user must go through the tape in sequence to find the part he or she wants.
+
+Microcomputer users quickly abandoned tape storage for the convenience and speed of random access disk drives. Recently, however, tape storage for microcomputers has experienced a revival, not as a principal storage device but for making backup copies of the data stored on hard disks. The data on magnetic storage can be easily destroyed, erased, or otherwise lost. Protecting the data on the hard disk is of particular concern to users because it contains so much data, which could be difficult and time consuming to reconstruct. This is why backups are so important.
+
+Back up: To copy a computer file or collection of files to a second medium, usually on a diskette or magnetic tape, so that the data are safe in case the original file is damaged or lost. Backups are usually copied to storage devices that can be removed from the computer and kept separately from the original.
+
+A tape backup is a copy of the data from a hard disk, stored on magnetic tape and used to recover lost data. A tape backup is relatively inexpensive and can rescue an organisation from the overwhelming task of trying to reconstruct lost data.
+
+Backing up electronic data is critical to protecting it from loss or damage.
+
+For more information on backing up data and protecting information, see Automating Records Services and Emergency Planning for Records and Archives Services.
+
+The most popular types of tape drives for microcomputers also use tape cartridges, but there are several tape specifications and cartridge sizes. A tape cartridge is a removable magnetic tape module similar to a sound or video cassette tape. Quarter inch tape, called QIC, is a tape cartridge that contains � inch (approximately � centimetre) wide tape. Depending on tape length, QIC tape capacities range from 340 MB to 2 gigabytes. Digital audio tape, called DAT, was originally an audio recording format, but is now also used for data storage. The 4mm wide DAT tape format storage capacity ranges from 2 gigabytes to 12 gigabytes.
+
+In addition to magnetic storage, there is also optical storage.
+
+Optical disk: A storage device that uses reflecting surfaces and laser technology to read and write data on a disk. Also known as a laser disk.
+
+With optical storage, data is burned into the storage medium using beams of laser light. The burns form patterns of small pits in the disk surface to represent data. The pits on optical media are permanent, so the data cannot be changed. Optical media are very durable, but they do not provide the flexibility of magnetic media for changing the data once they are stored.
+
+There are three types of optical disks.
+
+ * CD-ROM's are the most popular type of optical storage. CD-ROM stands for Compact Disc Read Only Memory. A computer CD-ROM disk, like its audio counterpart, contains data that has been stamped on the disk surface as a series of pits. To read the data on a CD-ROM an optical read head distinguishes the patterns of pits that represent bytes. CD-ROM disks provide tremendous storage capacity. CD-ROMs usually come with data already written onto them. These days most applications software is provided on CD-ROM. * It is now possible for computer users to write data to an optical disk. These are known as WORM disks, which stands for 'Write Once Read Many'. A single CD holds up to 680 megabytes, equivalent to over 300,000 pages of text in character format, and these disks are quite durable. These CDs are know as CD re-recordable (CD-R). There are other types of WORM disks, although there is no standard for these. * There is a third type of optical disk which can be erased and use to rewrite new information. These are sometimes known as EO (erasable optical) disks and CD-RW (CD rewritable). Magneto-optical disks combine magnetic disk and CD-ROM technologies. Like magnetic media they can read and written to and like floppy disks they are removable. They can store over 200 MB of data, and speed of access to this data is faster than a floppy but slower than a hard drive. There is no universal standard for these yet. CD-ROMs and magnet-optical disks are very useful for storing images. These take up much more storage space than data in character format, such as in word-processed files.
+
+
+Activity 6
+
+Are there procedures for backing up data in your organisation? If so, how often are backups done? What are the data stored on? If the computer stopped working, would the organisation be able to retrieve the data?
+
+THE IMPORTANCE OF DOCUMENTATION
+
+The computer hardware, software and peripherals will be accompanied by documentation, which explains how the various systems or programs operate.
+
+Documentation: Information needed to develop, use or maintain computer hardware and software and to permit access and retrieval of the data.
+
+Although documentation usually comes in the form of printed manuals, guide books, it may also come in electronic form, such as in 'help screens' contained within the computer software or documentation in data dictionaries and so on. Often, documentation is created when a specific computer application is used. For example, if a government office creates a data base of employees in order to administer payroll, documentation may be created describing how the database was established, what it is to be used for and what data fields have been created. This documentation can be critical to understanding the database system, particularly if it is being managed in an archival environment long after the creators of the system have left.
+
+Documentation should always be retained.
+
+Disposing of documentation can cause problems in the future, particularly if you have to reload software from the beginning. Documentation can also contain licences for the legitimate use of the software. Therefore it is critical to protect documentation and ensure it is readily available.
+
+PROTECTING AGAINST VIRUSES
+
+Virus: A computer program that is planted in one computer and then transferred, hidden in useful information, to one or more other computers with the intention of corrupting or wiping out information in the recipient computer.
+
+Viruses are extremely common. Many different types of viruses exist, ranging from ones that prevent you from opening up word-processed documents through to ones that destroy the entire contents of a hard drive. Viruses can be caught in several ways, for example by exchanging floppy disks, via electronic mail messages and through downloading documents from the Web. Networks make it much easier for viruses to move around. Once a virus gets into an organisation's computer system it can spread very quickly. New viruses appear each week, so it is essential that users have up-todate anti-virus software to combat this problem.
+
+If users have software that is unlicenced it could mean that it is 'pirate' or 'bootleg' software. This is software that has been illegally copied. Software of this nature sometimes contains viruses that can be extremely damaging to computers.
+
+SUMMARY
+
+This lesson introduced basic information about how computers work, including information about
+
+ * the components of a computer
+
+ * how a computer works * how software works * how the computer's memory works * how data is stored. UNDERSTANDING COMPUTERS 22
+
+
+
+STUDY QUESTIONS
+
+1. In your own words, explain what a computer is.
+
+2. Describe four different types of computers.
+
+3. Briefly explain how a computer works.
+
+4. What is hardware?
+
+5. What is software?
+
+6. What is the central processing unit of a computer? Why is it so important to the operation of the computer?
+
+7. Describe at least four different applications, or uses, of computers.
+
+8. What is a binary number system?
+
+9. What is a bit?
+
+10. What is a byte?
+
+11. What is the meaning of computer 'memory'?
+
+12. What is RAM?
+
+13. What is a storage device?
+
+14. What is a diskette?
+
+15. What is a hard drive?
+
+16. What is a database?
+
+17. What are the key differences between a diskette and a hard drive?
+
+18. What is magnetic tape and how is it different from a hard drive?
+
+19. Explain the concept of backing up files.
+
+20. What is an optical disk?
+
+21. What is documentation and why is it so important?
+
+22. How can viruses damage computers?
+
+
+ACTIVITIES: COMMENTS
+
+Activity 1
+
+One of the key objectives of this module is to help you think about the types of computers that may exist in your organisation and the processes involved with deciding how to computerise office procedures. These decisions should be made after considerable consideration and planning, so that computer systems are compatible and suit the needs of the organisation.
+
+This issue is addressed in more detail in other modules, particularly Automating Records Services. Managing Resources for Records and Archives Services also discusses the issue of planning for equipment purchases.
+
+It is also important to consider the types of computer used because, as a records professional, you will be involved with receiving the records created by those computer technologies. In order to manage those records well, it is critical to understand the equipment used and the tasks it was intended to perform.
+
+This issue is discussed in more detail in Managing Electronic Records.
+
+Activity 2
+
+This activity follows on the investigations you made in Activity 1. It is important to understand that computers must meet certain requirements before software packages can work with them. Before acquiring any new software, check that it can run on the computer you have. Again, computer purchasing requires short- and long-range planning, so that you can be sure the equipment you have suits current needs and will need future needs for a certain time before it needs to be replaced.
+
+Activity 3
+
+You could draw a simple flow chart that showed the following:
+
+The input for the letter is received from keyboarding, scanning or copying data from a disk
+
+The data are processed by the computer
+
+The data are stored in a storage device, such as a floppy disk, hard disk or magnetic tape
+
+The computer produces output in the form of a printed letter and an electronic version that may remain in the computer for future use or reference.
+
+Activity 4
+
+This activity is designed to help you consider exactly what types of computers and software are used in your organisation and to familiarise yourself with the various components of the computer.
+
+Activity 5
+
+As with other activities, this one is designed to emphasise the importance of knowing all the components of your computer. Knowing how much memory it has it important when you are deciding what types of software to install or whether to keep create large computer files or break the information into smaller computer files.
+
+You may want to ask the person in your organisation responsible for computer management about the decision-making process involved with purchasing computers or software. Find out as much as you can about how this is done, so that you can learn as much as possible about this aspect of computerisation.
+
+Activity 6
+
+Again, this activity is designed to help you understand how computers are used in your organisation. Backing up is critical to protecting information and records.
+
+This issue is discussed in more detail in Managing Electronic Records and Automating Records Services.
+
+
+LESSON 2
+
+COMPUTING ENVIRONMENTS
+
+This lesson examines three computer environments: mainframe computing, networks (such as Intranets), and the Internet. It introduces key concepts related to how mainframes, networks and the Internet work.
+
+Please remember, this lesson is not intended to provide a comprehensive explanation of the technical details of mainframe computing, networks and the Internet. Information is provided in order to introduce you to key concepts and provide an overview of these computing environments.
+
+MAINFRAME COMPUTING
+
+Mainframe computing developed at a time when computational power was an expensive and scarce resource. In order to use the expensive computer technologies efficiently, organisations had to share their resources. Many of computerised applications, such as invoicing, purchasing, payroll, accounting and so on, involved the organisation as a whole.
+
+If the original reasons for the mainframe computing model were cost and scarcity of resources, the current reasons for sharing computer power are
+
+ * security: the protection of data from outside or unauthorised access
+ * integrity: the guarantee that the data is not corrupted and that repeatability is achievable using the same applications and data
+ * system availability: centralised facilities can be operated by teams in shifts 24 hours a day, maximising the investment in IT equipment and allowing large data processing activities to be carried out efficiently
+ * data sharing: data input or created in one part of the organisation becomes available to other parts
+ * applications: many modern applications, such as personnel management systems, require access to a shared pool of resources. Today, mainframe computing is no longer an expensive resource; sharing is still a cost-effective means of providing computational power. Recent studies have shown that on a per-user basis, mainframe computing provides the least expensive form of computing.
+
+A mainframe environment involves not just the hardware. The security, integrity and availability of the mainframe system can only be achieved if the computer centre is staffed by people with the necessary skills, operated according to a set of practices and managed with the discipline (that is, the processes and procedures) that ensures the appropriate levels of security, integrity and availability. This is the 'mainframe environment'.
+
+In a mainframe environment, many people share access to a mainframe computer.
+
+A large central processor is kept in a purpose-built computer centre staffed by personnel responsible for maintaining it. Individuals in the organisation access the mainframe computer through terminals on their desktops in order to share common organisational resources, such as software programs or electronic data. As we use the term today, a mainframe is actually identified more by the 'environment' in which the mainframe is operated. In other words, the physical environment: the controlled temperature and humidity and the physical security of having the mainframe behind locked doors.
+
+Mainframe computers are used as tools to support a given 'business' application such as
+
+ * processing applications for licences
+ * processing government payroll information
+
+ * processing financial accounts
+
+ * processing environmental resource information.
+
+In all of these applications, the common denominator is the work process and the rules for undertaking the process. Everyone is undertaking a part of the whole work process and everyone must complete his or her work in accordance with the procedures required to make sure the job is done satisfactorily and the data are complete and consistent.
+
+For example, if ten people are responsible for managing government payroll, each will have a separate responsibility. They will all have access to the same database through the mainframe computer, and each person must complete his or her task adequately before the 'job' can be considered complete.
+
+The automation of a given work process, such as processing government payroll information, is often viewed as an information system.
+
+Information system: The combination of information, technology, processes and people brought together to support a given business objective.
+
+The mainframe is the data and application repository for most organisations. It is also the hub for most online business activities. It is believed that mainframes still house 90 per cent of the data major organisations rely on to conduct their business. Despite claims that mainframe technology is dying out, sales of mainframe hardware and software remain steady. The term 'mainframe' has always had the image of being something large in size. Yet, however big the early 'room-filling' mainframes were, today's modern versions are no bigger than the size of a household refrigerator. The level of mainframe sophistication has grown over the more than thirty years of its evolution; organisations still recognise its advantages in terms of performance, reliability and security.
+
+
+NETWORK COMPUTING
+
+A network computing environment is one in which an organisation has linked together personal computers that have been connected into a network.
+
+There are a number of types of computer networks.
+
+Local area network: A computer network located within a relatively limited area such as a building, agency or university campus. Also known as a LAN.
+
+Wide area network (WAN): A computer network that covers a large geographical area.
+
+There are an estimated 25 million computers connected to local area networks world wide. The purpose of networking personal computers and even mainframes together is to permit employees in the organisation to
+
+ * communicate with one another as well as others outside the organisation, normally through the use of electronic messages
+
+ * access information and services supported on the World Wide Web * share documents and data
+ * support various work processes in the organisation based on the automation of specific tasks.
+
+A network environment can range in sophistication from very simple to very complex. Some networks are used to support simple electronic mail communication. In other networks, employees may be able to share documents with each other and carry out the work of their work groups, project teams, etc. by exchanging electronic documents through e-mail. The most sophisticated organisations may have automated entire work processes. For instance, draft documents such as responses to letters sent to senior officials, are sent through various approval levels (such as action officer to manager to director to senior official) without ever being printed onto paper (except perhaps the final version, which needs to be signed by the senior official).
+
+A computer network can be simple and limited to a small number of computers or complex, linking a large number of computers.
+
+A computer that is not connected to a network is referred to as a stand-alone computer. When a computer is physically connected to a local area network, using a cable or other communications channel, the computer becomes a workstation on the network. Each device on the network including workstations, servers, and printers is referred to as a node.
+
+Node: A processing location on a network.
+
+A workstation normally has all of the usual resources found in the personal computing environment (hard drive, software, data and printer). However, users of workstations will also have access to network resources, which typically include application software, storage space for data files, and printers other than those on the local workstation. On a network, the network server typically provides the applications software and storage space for data files.
+
+Network server: A computer that is connected to the network and that 'serves' or distributes resources to network users.
+
+Networks use different kinds of servers to carry out specialised functions. For example, a file server is a computer and storage device dedicated to storing files.
+
+File server: A computer that serves or distributes application programs and data files to workstations within a computer network. The hard drive of the file server is shared by the workstations on the network.
+
+Any user on the network can store files on the server. Other types of servers include a print server to manage one or more printers and a database server to process database queries.
+
+Most network users will need to understand file servers because this is where they will store their files on the network. A typical local area network uses a powerful PC as a file server. However, a minicomputer or mainframe computer can also be a file server. File servers fall into three categories; dedicated, non-dedicated and application servers.
+
+A dedicated file server is devoted only to the task of delivering programs and data files to workstations. A dedicated file server does not process data or run programs
+
+for the workstations. Instead, programs run using the memory and processor of the workstation.
+
+In some cases, a network computer performs a dual role as both file server and workstation. When a non-dedicated file server is used, the computer workstation functions like a normal workstation, but other workstations can access programs and data files from the hard disk of the user's computer workstation.
+
+An application server is a computer that runs applications software and runs the results of processing to workstations as requested. An application server makes it possible to use the processing power of both the server and the workstation. Use of an application server splits processing between the workstation client and the network server. The method is also referred to as client/server architecture.
+
+Some networks include a host computer, usually a minicomputer or mainframe attached with terminals. A terminal has a keyboard and screen but does not have a local storage device and does no processing on its own. When a terminal is connected to a host computer, all processing takes place on the host.
+
+The software on a local area network typically includes many of the same applications one might use in a personal computing environment, such as word processing, spreadsheet, database management and so on. As the use of networks increase, however, organisations have begun to demand software that facilitate the flow and sharing of documents. This software includes groupware and workflow software.
+
+Groupware: Applications software that supports collaborative work between a group of users by managing schedules, sharing documents and undertaking intragroup communications.
+
+Essentially, groupware manages a pool of documents and allows users to access those documents simultaneously. A key feature of groupware is document version management which maintains all revisions within a document when more than one group member revises a document.
+
+Workflow software: Software that automates the process of electronically routing documents from one person to another in a specified sequence and time.
+
+Workflow software facilitates a process or a series of steps. Workflow is based on a 'process-centred model' as opposed to groupware's 'information-centred model'. With workflow software, the focus is on a series of steps. With groupware software, the documents are the focus.
+
+Peer-to-peer network: A type of network in which each workstation has equivalent capabilities and responsibilities.
+
+Peer-to-peer networks simply link a number of PCs together with no network server. This is a cheaper way of networking, and while files and printers can be shared the wider advantages of having a network server are lost.
+
+The main advantage of a computer network is that all the users can share resources, rather than have users each maintain his or her own resources. It is not necessary to purchase multiple copies of software; instead a licence can be purchased to use the software within the network which allows everyone to use the program at the same time.
+
+When a computer network is used, finding, retrieving, and storing files on a network is not very different from the process used on a stand-alone computer. However, when using a network, security is much more of an issue. Information is now accessible to a wide group of people, and sensitive or personal information needs to be protected.
+
+An internal network that belongs to an organisation and is accessible only by that organisation's members is often referred to as an Intranet.
+
+Intranet: An internal computer network that belongs to an organisation and is accessible only by that organisation's members.
+
+Activity 7
+
+Does your organisation have stand-alone computers, mainframe computers or networked computers? Ask the person or persons responsible for computer management why these types of computer have been chosen. Find out if there are any plans to change computer systems in the future? Why or why not?
+
+THE INTERNET
+
+The Internet evolved over the past thirty years from a fledging experiment with four computers into a vast information network that connects millions of microcomputers, minicomputers and mainframe computers. As of 1998, the Internet had more than 100 million users world wide, and that number is growing rapidly. The Internet is decentralised by design and, remarkably, this anarchy by design works well.
+
+Internet: A collection of local, regional and national computer networks that are linked together to exchange data and distribute processing tasks.
+
+There are a variety of ways to access the Internet, the most common being through an Internet Service Provider (ISP). An ISP is a company that charges an ongoing fee for providing Internet access to businesses, organisations and individuals. The ISP provides the user with the necessary communications software (such as e-mail) and user account. The user supplies a modem that connects the computer to the user's phone line. The user's computer dials the ISP's computer and establishes a connection over the phone line. Once connected the ISP routes data between the user's computer and the Internet. Most ISPs offer dial-up Internet connections and electronic mail access, along with additional services. Some ISPs offer direct access to the Internet without the use of proprietary software.
+
+The Internet connects millions of people through a collection of computer networks.
+
+A connection that uses a phone line to establish a temporary connection to the Internet is referred to as a dial-up connection. When the user's computer hangs up, the connection is broken. A phone line provides a very narrow pipe for transmitting data. Its typical capacity is only 28.8 thousand bits per second (bps). Using a phone line, the time to transfer the contents of a 680 megabyte CD-ROM would be over 53 hours. More rapid digital data transmission is now available from some telecoms providers in various parts of the world.
+
+The World Wide Web was created in 1990 as an easy-to-use source of information.
+
+World Wide Web: A computer network system that allows users to browse through information available on computers round the world.
+
+The World Wide Web opened the Internet to millions of people interested in finding information. There are over one million Web sites around the world and the number is growing very quickly. The World Wide Web consists of documents called Web pages that contain information on a particular topic. A Web page might also contain one or more links that point to other Web pages.
+
+Link: A reference to another document in an environment like the World Wide Web, that users can go to directly by clicking on the on-screen reference with the computer's mouse.
+
+Links make it easy to follow a thread of related information, even if the pages are stored on computers located in different countries. Every Web page is stored as an HTML (HyperText Markup Language) document.
+
+HyperText Markup Language (HTML): One of the main standards that controls how the World Wide Web works; it is an SGML document type definition that determines how Web pages are formatted and displayed and thus enables information to be exchanged on the World Wide Web.
+
+Standardised General Mark-up Language (SGML): A metalanguage that can be applied to documents in order to maintain their structure and context.
+
+An HTML document contains special instructions called HTML tags that tell a Web browser how to display the text, graphics, and background of a Web page.
+
+Web browsers are used to view Web pages, transfer files between computers, access commercial information services, send e-mail, and interact with other Internet users.
+
+Web browser: A software application that enables a user to locate and view pages on a Web site. Also known as a browser.
+
+To request a Web page the user either types in the URL (Uniform Resource Locator) address or uses a 'mouse' to click on a Web page link. 
+Uniform Resource Locator (URL): The global address of documents and other resources on the World Wide Web. URLs can point to executable files that can be fetched using FTP (file transfer protocol, ftp://) or a Web page that can be retrieved using HTTP (hypertext transfer protocol, http://).
+
+After the http://, the next segment of the address is the server name. The server is the computer and software that make the data available. A Web server, for instance, is a computer that uses Web server software to transmit Web pages over the Internet. Most Web servers have domain names prefixed with WWW. By entering the Web server name, one accesses the site's home page.
+
+Home page: The main page of a Website. Typically, the home page serves as an index or table of contents to other documents stored at the site (that is, the address).
+
+Website: A location on the World Wide Web.
+
+A home page is similar to the title page and table of contents in a book. It identifies the site and contains links to other pages at the site. The following is an example of a home page belonging to the ICA, viewed using a particular type of browser software called Microsoft Explorer.
+
+The Web browser is the gateway to commercial information services as well as the free sites on the Internet. A commercial information service provides access to computer-based information for a fee. In 1997, approximately 17 million people subscribed to the top four commercial information services: America On-Line, Compuserve, Microsoft Network and Prodigy. 
+The server sends the data for the Web page over the Internet to the computer. The data includes two things: the information the user wants to view and a set of instructions that tells the browser how to display it. The instructions include specifications for the colour of the background, the size of the text, and the placement of the graphics. Additional instructions tell the browser what to do when the user clicks on a link. The browser's menu and tool bars help users navigate the Web as they follow the links. The Back and Forward buttons trace and retrace the users' path through the links being followed from one Web page to another. The browser stores and can display a list of the pages being visited during each session. The browser can also store a list of favourite sites, often called bookmarks, to permit the user to jump directly to the site they wish to see instead of having to enter its URL every time.
+
+
+Users can find information on the Web by using a search engine. There are a number of Web sites that provide search facilities, and the Internet Service Provider will links to these sites.
+
+Search engine: A program that searches documents for specified keywords and returns a list of documents where the keywords were found.
+
+
+Activity 8
+
+If possible, try to get access to a computer that can connect to the Internet. If you are not already familiar with accessing the Internet, have someone help you get connected and then 'play' with the Internet and see if you can find and use the following: back button forward button bookmark.
+
+
+Can you find the following Websites by typing in the 'URLs'?
+International Council on Archives: http://www.archives.ca/ICA/
+UNESCO: http://www.unesco.org/webworld
+Public Record Office (UK): http://www.pro.gov/uk/
+When you have finished, write down which sites you were able to access and whether you had any difficulty. Can you find the following Websites by searching under key words? For each search, write down each of the steps you took.
+
+National Archives of Canada National Archives and Records Administration (US) National Archives of Australia International Records Management Trust
+
+Can you find your government's Website? Does your records or archives institution have a Website? Can you find it?
+When you are finished, discuss this activity and your results with a friend or colleague who has also used the Internet and discuss how you might have worked differently, perhaps to speed up your results or increase the accuracy of your searches.
+
+
+SUMMARY
+
+This lesson has introduced basic information about three computer environments: mainframe computing, networks (such as Intranets), and the Internet, explaining key terminology and discussing how these environments work.
+
+STUDY QUESTIONS
+
+1. What is a computing environment?
+
+2. What is a mainframe environment?
+
+3. Explain the concept of an information system.
+
+4. What is a personal computing environment?
+
+5. What is a network computing environment?
+
+6. Why might a network computing environment be a valuable way for someone to work within an organisation?
+
+7. What four things does a network allow an employee to do?
+
+8. What is a local area network?
+
+9. What is a wide area network?
+
+10. What is a network server?
+
+11. What is an Intranet?
+
+12. What are the advantages and disadvantages of a computer network?
+
+13. What is the Internet?
+
+14. What is an Internet Service Provider?
+
+15. What is the World Wide Web?
+
+16. What is a URL?
+
+
+ACTIVITIES: COMMENTS
+
+Activity 7
+
+This activity is intended to help you understand the concepts addressed in this lesson and apply them to the reality of your own work situation. Your organisation may have few computers and no networks or it may have an extensive system of networked computers. It is important to consider the purpose behind a particular computing environments and not simply to choose a method because it is the easiest one at the moment.
+
+This issue is discussed in more detail in Automating
+
+Records Services. Planning is discussed in Strategic Planning for Records and Archives Services and in Analysing Business Systems.
+
+Activity 8
+
+If you have been able to get access to the Internet and 'play' with some of the features, you will have discovered both the amazing diversity of options and the complexity -- and perhaps frustration! -- of trying to find information easily or quickly.
+
+Were the URLs easily accessed? Sometimes organisations change their electronic addresses and it becomes very difficult to find the new sites. It is rather like changing a phone number; if it isn't updated in the telephone directory people will not know where to find it. And since many people may refer to URLs in their publications or communications, others may try to access these URLs long after they are out of date.
+
+The URLs for the three Websites you were asked to search for are National Archives of Canada: http://www.archives.ca/ National Archives and Records Administration (US): http://www.nara.gov/ National Archives of Australia: http://www. naa.gov.au/ International Records Management Trust: http://www.irmt.org
+
+If you were able to discuss this activity with a colleague, you might have been able to exchange ideas about how to make more efficient use of the Internet.
+
+Internet issues are discussed in more detail in
+
+Automating Records Services.
+
+
+LESSON 3
+
+
+COMPUTER APPLICATIONS
+
+Applications software includes programs that users access to carry out work. This lesson examines two applications that may be of particular use to the student: databases and electronic mail ('e-mail'). It introduces key concepts related to how databases and e-mail work.
+
+Please remember, this lesson is not intended to provide a comprehensive explanation of the technical details of all applications. Other applications would be word processing, spreadsheets and presentations. A brief description of these types of software can be found in Lesson 1.
+
+DATABASES
+
+A database is a collection of information stored on one or several computers.
+
+Database: A structured assembly of logically related data designed to meet various applications but managed independently of them.
+
+More specifically, a database is a self-describing collection of integrated records. A database is self-describing in that it contains, in addition to the user's source data, a description of its own structure (such as in a data dictionary). It is the data dictionary that make data independence possible (for example, the database management system maps the data fields into records and handles other similar transformation).
+
+A database is a collection of information stored on computers.
+
+In the mid-1960s, large organisations began to apply the power of mainframe database technology to administrative functions. As the term 'computer' implies, originally most administrative uses of computers were to process figures rather than text. These were usually activities involving high volumes of numerical calculations, where the workflow was highly predictable and routine. Typical examples include payroll, accounts administration or personnel data. These database applications were primarily organisation-wide transaction processing systems.
+
+The limitations of file processing prevented the easy integration of data. Database technology held the promise of solving these problems so large organisations began to develop organisational databases. Companies centralised their operational data, such as purchase orders, inventory and accounting data in these databases; these database applications were primarily organisation-wide, transaction processing systems.
+
+Originally, database processing was developed for use in the mainframe environment. However, in the late 1970s to early 1980s, database technology began to move from mainframes to PCs. As a result, database management systems gradually became more powerful and easier to use. By the mid to late-1980s, PCs were beginning to be linked together with the aid of networking, which enabled computers to send data to one another at previously unimaginable rates. In time, users wanted to share their databases as well; this led to the development of multi-user database applications on local area networks (LANs).
+
+Databases were originally developed using mainframe computers but are now common on personal computers and in networked environments.
+
+Following is a brief description of the concept of databases. In order to understand databases, it is important to begin with the data field.
+
+Data field: A space allocated for a particular item of information. In a database, fields are the smallest units of information you can access.
+
+A data field contains a single piece of information (first name, family name, ministry, employee number, salary and so on). A collection of data fields comprise a record such as, in this example, an employee record.
+
+Database record: A complete set of information in a database; records are composed of fields, each of which contains one item of information.
+
+A collection of records (in this case, employee records) comprises a database. Structured databases typically store data that describes a collection of similar entities. 'Salaries and benefits' is an example of an entity; 'education/training' is another entity. A n employee database stores data about the employees in an organisation. A medical database stores data for a collection of patients. An inventory database stores data for a collection of items stocked in a warehouse.
+
+
+Activity 9
+
+Does your organisation use databases? For what purposes? What kinds of information are entered into the databases? Who is responsible for maintaining them? Who can access them?
+
+If your organisation does not use databases, write down at least three functions that you think could be managed using databases (such as maintaining lists of personnel, keeping inventories of supplies and so on). If your organisation does use databases, write down three functions, other than those currently performed, that you think could be managed more efficiently using databases.
+
+A data structure refers to the overall design for records in a database, such as the fields contained in a certain view and the configuration of fields and sub-fields for data entry. The data structure should present a uniform format to facilitate information exchange.
+
+Data structure: A scheme for organising related pieces of information. The basic types of structures include: files, lists, arrays, records, trees, tables. Each of these basic structures has many variations and allows different operations to be performed on the data.
+
+There are three basic database models.
+
+ * Hierarchical databases exhibit a branching structure, with information arranged into sets and sub-sets; getting to a particular piece of data may require going through several vertically ordered files. An example is the process involved in finding a distant cousin on a family tree.
+ * Network databases offer many more direct connections between files, but, similar to hierarchies, the links are predefined and are difficult to change or adjust.
+ * Object-oriented databases link self contained entities (or objects) together.
+
+Objects can be text, a picture, a piece of film or any item that can be individually selected and manipulated. This kind of database is particularly useful for organising large amounts of disparate information, but they are not designed for structured numerical analysis. The limitations found with these types of databases explain why most organisations have turned to relational databases. Relational databases not only accommodate multiple views but allow new links to be forged as needs arise. Relational databases are powerful because they require few assumptions about how data is related or how it will be extracted from the database. As a result, the same database can be viewed in many different ways.
+
+ * Relational database: A database that spreads information across different tables while maintaining links between them.
+
+A relational database stores facts in tables called relations. The only requirement is that the information must be capable of being laid out in rows and columns (similar to a list of names, addresses and phone numbers). An example from a university might help to illustrate the concept. In a very simplified view of a university database, each facet of the university's administration would be represented by a table containing information within the remit of a single department. The admissions office, for instance, keeps track of students by ID number, name and major field of study. The personnel office keeps records of the department, rank, names, and social identity numbers of the teaching staff, and so on. The following figure shows examples of relational tables.
+
+A relational database stores information across different tables and connects them with links in the computer.
+
+Admissions Office Personnel Office Students Staff ID Last name First name Dept Dept Rank Last name First name 7016639 Morgan George Engl Engl Asso Register Chris 0010534 Deal Sue Math Bio Asst Cohn Denise 9105977 Conrad Mark Hist Math Prof York Carla 2053021 McDowell Tina Chem Chem Asst Sawyer John 4344891 Gomez David Bio Fr Inst Durham Paul 0355703 Frear Robert Engl Engl Prof Syng Kim 9470825 Whitney Pam Fr Chem Prof Franco Henry 3171386 Smith Steven Bio Hist Inst Preston Lydia 8200461 Heinz Judith Engl Bio Assoc Kelly Susan Finance Office Registrar's Office Classrooms Registration Bldg Room Dept Section Section ID Thompson 210 Hist 2943 5601 9105977 Seeley 34 Eng 2107 3376 2053021 Douglas 308 Chem 3376 2107 7016639 Wright 15 Fr 5601 4603 3171386 Douglas 112 Bio 3641 3780 4344891 Douglas 225 Math 4603 1885 8200461 Thompson 120 Engl 5864 3641 0010534 Wright 31 Bio 3780 1885 9470825 Thompson 233 Engl 1885 2943 8200461
+
+Isolated from one another, these tables would be nothing more than a simple computerised filing system. Tied together, however, they become a database, with each table offering access to the information held by all of the others. This versatility stems from deliberate duplication of columns in two or more tables, resulting in a tool called a common key. If, for example, two tables containing information about students each possess a column containing student identification numbers (ID) then this number can be used to find the row in each table that contains information applicable to any student.
+
+Each column in a table represents a single data attribute, or characteristic, of the table's subject. A column might contain, for instance, the identification numbers of the students or each professor's department.
+
+Each row, or record, in a table contains all the information about a single entry. In the case of a student, a record might include, in addition to an identification number, the individual's first and last names and major course of study.
+
+Attribute
+
+Data field Attribute Record Name John Doe Sune Jones Jane Brown Title Director Manager Supervisor Department Personnel Personnel Personnel ID Number 654321 123456 456123
+
+Hire Date 01/07/87 30/09/88 03/03/97
+
+Belonging to both a row and a column, an occurrence is the basic unit of a relational database table. The occurrence contains the value of an attribute of a single record. In some cases, the value is a string of letters making up a word or words, in others a set of numerals, such as a student's identification number or job title.
+
+Officials in the admissions, personnel, and finance offices have direct access to each other's information through the 'Dept' attribute, common to all the tables. Similarly, tables in the admissions and registrar's offices are joined by the 'ID' attribute for the student identification number. Relations in the registrar's and finance offices are connected by a 'section' attribute that identifies subdivisions of courses.
+
+
+Activity 10
+
+Imagine you wish to create a database of information about records in your archival institution. You want users to be able to search the database to find out what information you have in the archival institution on what topic. Write a list of the fields you would need to include in order to make the database useful. (For help, take a look at your organisation's finding aids and see how that information was broken up into categories; these categories can become fields in the database.)
+
+Database management software is used to create and manipulate databases. Data access software is usually used to search databases. The data access software understands the structure and details of the database which means the user simply has to enter his or her search specifications, using either a menu, a keyword search engine, a query language or a natural language (among others).
+
+Menu: A collection of onscreen choices given to the user to help him or her interact with a computer system.
+
+Database menus are similar to those used in most software. They are typically arranged as a hierarchy so that after the user makes a choice at the first level of the menu, a second series of choices appears.
+
+Keyword searching permits access to databases through the use of keywords.
+
+Keyword search engine: A program that allows a user to search a database by an index entry that identifies a specific record or document.
+
+Keyword search engines are especially popular for searching the many documents stored in a free form database such as the World Wide Web. To use a keyword search engine, the user types in a word and the search engine locates areas in the database where the word or related information can be found.
+
+When information in a database needs to be accessed quickly, it is usually stored as a structured database. However, the structure in structured databases can cause a problem for users who might not know the format for the records in a database. One way to help users search structured databases is by providing a 'query by example' user interface based on the use of a query language.
+
+Query language: A set of command words that can be used to direct a computer to create databases, locate information, sort records and change the data in those records.
+
+One query language is called SQL (structured query language). The use of query language is based on knowledge of the command word and the grammar or syntax that will let one construct valid query sentences. For example, the SQL command word for finding records is SELECT. WHERE is used to specify that only certain rows of the table are displayed. For example, SELECT employee ID no from employee statistics table WHERE position = 'Manager'.
+
+In more sophisticated systems, queries can also be formulated in a natural language such as standard English, French, or Japanese. In order to use the natural language, the user is not required to learn a query language. Queries can be straightforward such as: 'What records of World War Two are available in the archival institution'? This form of searching is still under development although examples of its use are spreading rapidly.
+
+Users can ask questions of the database using a variety of query languages, which formulate questions so that the computer can perform operations and provide results.
+
+
+COMMUNICATING BY COMPUTER
+
+Communicating via e-mail is rapidly becoming as important as telephone and fax communication and forms an important component of any office automation system.
+
+Electronic mail (e-mail): A way of sending messages between people anywhere within an organisation or in the world using a computer that can communicate with another computer through a computer network. The message or document can be viewed on a computer screen and printed out.
+
+E-mail is handled by a variety of software programs such as Microsoft Outlook Express, Eudora, elm, pine and so on. The message originator creates a message file in the e-mail software editor. When complete, the message is posted to a message transport system that assumes the responsibility for delivering that message to its recipient(s) 'mailbox'.
+
+To receive and read the message, the recipient runs a software program that retrieves incoming messages, allowing the messages to be filed, listed, forwarded or replied to. Generally a single user-interface program is used to send and receive messages both locally and worldwide. Users do not need to have the same e-mail software program as the person they are corresponding with. The e-mail itself may consist of simply a message or may carry with it attachments containing files created in a variety of software applications, for example word processed documents or spreadsheets.
+
+Electronic mail is a method for communicating messages electronically using computer networks.
+
+The ability to send email depends on having an Internet Service Provider and a modem, or being linked into a larger university, government or company network. Being linked into a larger network requires a user to have a network card in the computer and access to network cabling. There are various networking standards. One of the most common is 'ethernet'.
+
+Ethernet: A local area network (LAN) protocol that supports data transfer.
+
+Open networks allow users to send e-mail internally, to colleagues in the same organisation, and externally via the Internet. Some organisations have private networks that allow staff to send e-mail all over the world, but not outside the organisation.
+
+Network administrators or Internet Service Providers will give users an email address. This is usually in the format xxx@yyy.zzz. The first part of the address before the @ sign is the individual user's name or identifier. The second part of the address is split into at least two parts (sometimes more), each part divided by a full stop or period. This part of the address indicates which company or university the user works for, or which ISP they are using, or even which country they are based in.
+
+For example a user on America-Online would have the address: auser@aol.com. A user in the British University College London may have the email address: zzz999@ucl.ac.uk. In this address, the user has been given the code 'zzz999' by the university. The rest of the address shows that 'ucl' is University College London, that it is an academic institution ('ac') and that it is based in the UK ('uk'). There are a number of different types of email addresses, including .com, .org, .co.uk and so on.
+
+The following figure is an example of an e-mail message received using Microsoft Outlook Express electronic mail software that includes attachments.
+
+Activity 11
+
+Does your organisation use electronic mail? For what purposes? What kinds of information are conveyed using electronic mail? Who has access to the electronic mail systems?
+
+Message text
+
+Attached Documents
+
+Header information Figure 4: Sample Electronic Mail Message
+
+SUMMARY
+
+This lesson examines two particular applications of particular use to the student: databases and electronic mail ('e-mail'), examining key concepts related to how databases and electronic communications work.
+
+STUDY QUESTIONS
+
+1. What is a database?
+
+2. What is a data field?
+
+3. What is a database record?
+
+4. Explain the value of storing information in a database.
+
+5. What is a relational database?
+
+6. What is the concept of query language?
+
+7. What is electronic mail?
+ 8. Briefly explain how electronic mail works.
+
+ACTIVITIES: COMMENTS
+
+Activity 9
+
+Databases can be used for a wide range of activities, such as managing long lists of information, names and addresses, inventories of equipment and so on. Almost any information that could be quantified or organised can be managed in a database. However, developing databases takes time, so it is important to use this technology only when it is really useful to the organisation.
+
+Activity 10
+
+You may wish to include the following fields in your database, in order to make information available about the holdings of your archival institution.
+
+1. Unique identification number for each computer record
+
+2. Title of the records being described
+
+3. Name of the creating department, agency or individual
+
+4. Beginning date of records
+
+5. Ending date of records
+
+6. Additional information about the date
+
+7. Linear metric measurement, of the extent of the records
+
+8. Information about any restrictions on access
+
+9. Information about any related materials
+
+10. Administrative history or biography of the creator of the records
+
+11. Physical description of the records (what media or format they are in)
+
+12. General description of the scope and contents of the records
+
+13. Key words or access points for searching
+
+14. Date the information was entered/updated in the computer
+
+15. Name or initials of the person responsible for entering or updating the computer entry.
+
+You may not have thought of all these data fields. When working with a database it is critical to divide each separate piece of information into a unique field, so that it can be searched and sorted along with other fields containing the same information. For example, if you put in one field both the name of the person entering the data (15), and the date the information was entered (14), you would not be able to sort by name or by date; the computer would not be able to distinguish those pieces of information in one line or field. Separating them allows you to search for names and dates separately. In many databases, you can combine searches and so conduct even more sophisticated research. For example, someone could access this database and ask for all records beginning after 1940 (4) and ending before 1950 (5) and created by the Department of Agriculture (3). Such a search would not be possible in a word processed document.
+
+The issue of automating such systems is discussed in more detail in Automating Records and Archives Services.
+
+
+Activity 11
+
+This activity helps you start to consider the issue of creating and managing electronic data. It is useful to learn as much as you can about your organisation's electronic mail system and keep this information in mind as you study this and the other computer-related modules in this study programme.
+
+
+LESSON 4
+
+WHAT TO DO NEXT?
+
+Understanding Computers: An Overview for Records and Archives Staff has been written to familiarise records and archives staff with some of the basic concepts of computers. As well, this module has explained some of the key terms people will encounter as they work more and more often with information technology specialists. The module introduces important terminology, offers definitions and explains how the concept in question may affect records or archives work. This module has presented introductory information and should not be considered by any means a complete discussion of computerisation.
+
+ESTABLISHING PRIORITIES FOR ACTION
+
+This module has introduced basic information about computers. Once you understand these concepts, the next step is for you to consider what to do next. As this is a basic module on computerisation, you need to determine the best course of action for you as a student and for you as a representative of your organisation. Should you continue with further reading on the topic? Should you proceed with the study of related modules in the study programme? Each institution will make different decisions based on its administrative environment and short- and long-term plans. However, it is possible to offer some recommendations for action, to help the institution understand its computer needs. Complete the activity below then consider the suggestions offered.
+
+Activity 12
+
+Based on the work you have done for this module, what priorities would you establish for yourself in order to study more about computerisation and make yourself sufficiently comfortable with the topics included in here? What would you do first? What next? Why?
+
+Priority 1: Discuss Computers with Colleagues and Friends
+
+Take every opportunity to discuss computers with your colleagues, with friends or with others in the field. You can only benefit from reviewing topics with others, even though their opinions might leave you confused from time to time! It is important to ask as many questions as possible, as some topics that seem straightforward are in fact quite complex and require considerable thought.
+
+Priority 2: Practice Using Computers
+
+If you have access to a computer, practice using it as much as possible. You may be familiar with some functions; try to learn about others. You may not know how to type; take advantage of any free time to learn how to use the keyboard comfortably. If you have access to databases or the Internet, work with them whenever you can to learn more about how they work. Bear in mind, though, that you could soon suffer from 'information overload'. Be sure to balance your work on computers with reading other modules or doing other work.
+
+Priority 3: Attend Training Courses
+
+Whenever possible, try to attend training courses, workshops or seminars on computer issues. Perhaps your organisation offers in-house training, or a local college or institute provides courses on computer issues. Try to study as much as you can, but remember it is wise to focus first on those skills that you can use and practice in your day-to-day work. It is difficult to learn and remember computer skills if you do not practice them regularly.
+
+Priority 4: Study Associated Modules in the MPSR Study Programme
+
+This module has only introduced you to basic concepts about computers. It may be useful to read the two associated modules: Automating Records Services and Managing Electronic Records. You will want to keep this module close at hand while you work through those modules, so you can refer back to basic information as needed. You may not fully understand all the issues discussed the first time; you are advised to work through all these modules slowly and carefully, so that you allow enough time to absorb the information provided.
+
+GETTING HELP
+
+Many institutions, particularly in countries with limited resources, have limited access to information about computerisation. However, there are places you can go to get more information or to obtain assistance. Following are names and addresses of agencies that could be contacted for assistance.
+
+See the Additional Resources document for information on other organisations and associations involved with records and archives management generally.
+
+International Organisations
+
+Commonwealth Network of Information Technology for Development (COMNET-IT)
+
+Gattard House National Road Blata I-Bajda HMR 02, Malta Tel: +356 2599 2186 or +356 234710 Fax: +356 2599 2701 E-mail: comnet@magnet.mt Web site: http://www.comnet.mt
+
+COMNET-IT is an international foundation sponsored by the Commonwealth Secretariat and the Government of Malta. It provides for its members a forum for the interchange of knowledge and ideas through regional and in-country seminars and workshops, its journal COMET-IT Forum and access to databases and discussion groups.
+
+International Federation for Information Processing (IFIP)
+
+Secretariat Hofstrasse 3 A-2361 Laxenburg Austria Tel: +43 2236 73616 Fax: +43 2236 736 169 E-mail: ifip@ifip.or.at Web site: http://www.ifip.or.at/
+
+
+The IFIP began its official existence in 1960 under the auspices of UNESCO. It is a non-governmental, non-profit umbrella organisation for national societies working in the field of information processing. IPIP's aims are to: promote information science and technology, advance international co-operation in the field of information processing, stimulate research, development and application of information processing in science and human activity; further the dissemination and exchange of information on information processing; and encourage education in information processing.
+
+International Organization for Standardization (ISO)
+
+Case postale 56 CH-1211 Geneva 20 Switzerland Tel: +41 22 749 01 11 Fax: +44 22 733 34
+
+Website: http://www.iso.ch
+
+The ISO has established many standards that affect computerisation; see in particular the ISO committee work on information technology and image technology. See the ISO website for more information.
+
+National Organisations
+
+The American Society for Information Science (ASIS)
+
+8720 Georgia Avenue, Suite 501 Silver Spring, MD 20910, US Tel: +1 301 495 0900 Fax: +1 301495 0810 E-mail: asis@asis.org Web site: http://www.asis.org/
+
+ASIS brings together diverse streams of knowledge, focusing what might be disparate approaches into novel solutions to common problems. ASIS bridges the gaps not only between disciplines but also between the research that drives and the practices that sustain new developments. ASIS counts among its membership some 4,000 information specialists from such fields as computer science, linguistics, management, librarianship, engineering, law, medicine, chemistry and education; individuals who share a common interest in improving the ways society stores, retrieves, analyses, manages, archives and disseminates information.
+
+Association for Computing Machinery (ACM)
+
+One Astor Plaza (Headquarters) 1515 Broadway New York, NY 10036, US
+
+Tel: +1 212 869 7440 Fax: +1 212 944 1318 E-mail: ACMHELP@acm.org Web site: http://info.acm.org
+
+ACM is the world's oldest and largest educational and scientific computing society. Since 1947 ACM has provided a vital forum for the exchange of information, ideas and discoveries. Today, ACM serves a membership of more than 80,000 computing professionals in more than 100 countries in all areas of industry, academia and government.
+
+British Computer Society
+
+1 Sanford Street Swindon, Wiltshire SN1 1HJ, UK Tel: +44 01793 417417 Fax: +44 01793 480270 E-mail bcshq@hq.bcs.org.uk Web site: http://www.bcs.org.uk/
+
+The British Computer Society is the only chartered professional institution for the field of information systems engineering. It exists to provide service and support to the information science community, including individual practitioners, employers and the general public.
+
+Institute of Electrical and Electronics Engineers, Computer Society (Headquarters)
+
+1730 Massachusetts Avenue, NW Washington, DC 20036-1922, US (Branch offices: Europe and Asia/Pacific) Tel: +1 202 371 0101 Fax: +1 202 728 9614 E-mail: membership@computer.org Web site: http://www.computer.org/
+
+The IEEE Computer Society is the world's leading organisation of computer professionals. The society promotes an active exchange of information, ideas, and technological innovation among its members.
+
+Activity 13
+
+Find out if your institution has any information about any of the agencies listed above. Does your organisation receive publications, participate in conferences or meetings or otherwise work with any of these groups?
+
+In your opinion, which groups should your institution consider communicating with first, if any, and what would you expect to achieve by doing so? How would you go about building a productive relationship?
+
+ADDITIONAL RESOURCES
+
+The information for this module was derived from various sources including publications, presentations, guidelines and other primers. A particularly valuable source was Parsons and Oja, Computer Concepts. Additional sources on computer basics are below. Core publications are identified with an asterisk (*).
+
+Core publications are also identified in the Additional Resources document; refer to that document for information on more general publications on records and archives management.
+
+Derfler, Frank and Les Freed. How Networks Work. How It Works Series. Emeryville, CA: QUE Corp, 1998.
+
+Gralla, Preston and Mina Reimer. How Intranets Work. How It Works Series. Emeryville, CA: QUE Corp, 1996.
+
+* IDG Books. �for Dummies. Computer Book Series. Chicago, IL: IDG Books, various years. This series of introductory books, called Word for Dummies, Windows 95 for Dummies, PCs for Dummies and The Internet for Dummies, explain computers in clear language, with practical examples and valuable illustrations. More information is available at http://www.dummies.com.
+
+* Parsons, June Jamrich and Dan Oja. Computer Concepts. Cambridge, MA: Course Technology, 1999. White, Ron. How Computers Work. How It Works Series. Emeryville, CA: QUE Corp, 1998.
+
+This illustrated computer anatomy book is filled with basic, useful information on the workings of a computer and the advanced technology that is making the computer a part of everyday life. This edition includes an updated CD-ROM that takes the reader inside the computer.
+
+Activity 14
+
+Check your institution's library or resource centre. What books or other resources do you have about computer issues? Are any of the publications listed above available in your institution? If so, examine two or three of them and assess their currency and value to your institution. If not, identify two or three publications you think would be most useful to help develop or expand your library. Devise a plan outlining how you could realistically obtain copies of these.
+SUMMARY
+
+This lesson has provided an overview of the entire module, Understanding Computers: An Overview for Records and Archives Staff. This lesson has then discussed how to establish priorities for action and suggested that the main priorities for action are often as follows:
+
+ * Priority 1: Discuss computers with colleagues and friends
+ * Priority 2: Practice using computers
+ * Priority 3: Attend training courses
+ * Priority 4: Study associated modules in the MPSR Study Programme.
+
+The lesson then outlined ways to find out more information or get help with records issues. The lesson concluded with a discussion of valuable information resources relevant to current records management.
+
+STUDY QUESTIONS
+
+1. Outline three question you would ask a computer professional to ensure he or she had appropriate qualifications?
+
+2. Indicate two of the organisations listed in this lesson that you would choose to contact first and explain why.
+
+3. Indicate two of the publications listed in this lesson that you would choose to purchase first and explain why.
+
+
+ACTIVITIES: COMMENTS
+
+Activity 12
+
+Every institution will find itself at a different stage of development in terms of records and archives management. Similarly, every person will have a different level of knowledge of records and archives issues. It is important to study core materials first and become comfortable with key principles and concepts before exploring those with colleagues or reading into more complex literature. However, contact with colleagues and access to other literature is valuable, and joining and participating in professional associations is one way to expand your horizons and those of your institution.
+
+Activity 13
+
+If resources are limited, it is wise to communicate with international organisations first, as they often obtain and filter information from national or regional associations. Thus valuable information is passed on to your organisation through the international group, which can save resources for all. It is also advisable to focus on general information before obtaining specialised publications or information.
+
+Activity 14
+
+As mentioned in relation to the earlier activity, it is important to begin with general information and ensure you have a good resource library of introductory and overview publications before developing a more specialised library.
+
+

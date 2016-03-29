@@ -1,0 +1,34 @@
+Fucking hell, I forget this every time.
+
+Python has a number of ways of handling inputs, depending on which version you are using. I can never fucking remember the easy way to get IdeOne and Spoj to read inputs.
+
+A nice wee trick for the program to run on it's own is to call the main function:
+
+if __name__ == '__main__':
+    # do what you need to do.
+
+raw_input() reads the first line of an input. It appears to terminate at the end of line so you can use it to read in multiple lines.
+
+if __name__ == '__main__':
+    inputOne = input()
+    inputTwo = input()
+    inputThree = input()
+
+This will read in the following and assign each to a different variable.
+
+    1
+    2
+    3
+
+Obviously this only works for simple inputs when you know how many inputs you are going to get up from.
+
+If you need more control you can use 
+
+    import sys
+    for line in sys.stdin:
+        print line,
+
+
+-----------
+
+* [Python Programming/Input and output](http://en.wikibooks.org/wiki/Python_Programming/Input_and_output)

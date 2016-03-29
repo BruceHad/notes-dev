@@ -1,0 +1,541 @@
+# Python Notes
+
+(These notes do not always apply to Python3)
+
+# (6.00) Introduction to Computer Science and Programming - Readings
+
+ * http://www.greenteapress.com/thinkpython/thinkCSpy/html/
+ * https://en.wikibooks.org/wiki/Python_Programming/
+ * http://python.net/~goodger/projects/pycon/2007/idiomatic/handout.html
+ * http://docs.python.org/tutorial/
+
+Computer Science thinking combines engineering design, mathematical analysis and problem solving and scientific investigation and experimentation.
+
+Problem solving is a key skill.
+
+Python is a high-level, interpretted, formal language for writing programs. A program is a sequence of instructions specifying how to perform a computation.
+
+Common instructions used in programs: Input, Output, Mathematical Functions, Conditions and Loops. And these are the basic building blocks of nearly all programs.
+
+## Formal Languages
+
+Programming languages are formal languages for expressing computations. 
+
+Syntax rules can pertain to Tokens and Structure. Tokens are the basic blocks or symbols of the program, analagous to words in a natural language, and the rules refer to what tokens can be used and what they mean. Structure refers to how those tokens can be arranged.
+
+Formal Languages differ from natural languages. They are more precise. Therefore they require less redundancy to convey accurate meaning, so are more dense and concise. They are less forgiving. Structure is more important.
+
+As a result, Formal Languages are more difficult for humans to parse.
+
+## Debugging
+
+Programs generally contain errors. It can be useful to split these into three categories: syntax, runtime and semantic.
+
+Syntax is your basic typo or glaring error that breaks the rules of the language and prevent the program from being run.
+
+Run-time errors (or exceptions) will only appear during the running of the code.
+
+Semantic errors do not prevent the code from running, but are where the code doesn't do what you want it to do.
+
+Debugging is a large part of programming. For some, it is the main part. Get a program to do something, then carry on debbuging until it does what you want it to do.
+
+## Incremental Development
+
+To avoid massive debugging sessions it is recommended that I develop the code in small increments and test as I go.
+
+1. Start with a working program.
+2. Use temporary variables to hold intermediate values (this makes it easier to debug by printing these intermediate values.
+3. Optional: Once the program is working, collapse the scaffolding used to test.
+
+## Numbers
+
+### Integers
+
+### Long Integers
+
+According to the documentation integers have a maximum of 32bit precision (or more depending on the system) which is 4,294,967,295 integer values. But sys.maxint give me a value of 9,223,372,036,854,775,807.
+
+Anyway, if a value exceeds the maximum value, Python detects the overflow and converts to long.
+
+If you want to specify a long directly, type in the integer with a capital L at the end.
+
+    long = 1L
+
+The long() function converts integers to long.
+
+### Floating Points
+
+Floats (Floating point numbers) are only approximate representation of fractions. This is due to the limitation of computers rather than any problem in Python.
+
+Depending on the computer architecture, this approximation is to around 53 bits of precision, so in most cases it is accurate enough.
+
+But it can have some funny effects. For example:
+    
+    >>> round(2.675, 2)
+    2.67
+
+To check why we can use the decimal module.
+
+    >>> from decimal import Decimal                                                                                                 
+    >>> Decimal (6.725)                                                                                                             
+    Decimal('6.7249999999999996447286321199499070644378662109375')  
+
+So we can see that the float 2.675 is actually slightly closer to 6.72 than it is to 6.73, so round rounds it down.
+
+## Tuples and Sequences
+
+Tuples are one of Python's basic data types.
+
+They are a list of items. Creating a tuple usually involves setting the list, surrounded by parentheses.
+
+    t = (1, 2, "string")
+
+But the parentheses are optional.
+
+Items in the list can be accessed using the index, just like lists.
+
+    print t[2]
+    >>> string
+
+Tuples are immutable, though they can contain mutable items, such a lists.
+
+You can create an empty tuple if you want.
+
+    t = ()
+
+Or you can create a tuple with only one item, though the sytax is ugly.
+
+    t = ('one',)
+
+Note the trailing comma, this is necessary.
+
+Assigning a list of items to a tuple is known as packing the tuple. The same can happen in reverse.
+
+    x, y, z = t
+
+If t has three items, then they will be unpacked and assigned to x, y or z respectively. This should work for other sequence types, such as lists.
+
+## Strings
+
+Strings are compound data structures, basically sequence of character items.
+
+You can access single characters, or slice up the string, similar to a list. Strings are immutable though. Negative indexes also work to traverse the string in reverse.
+
+Computations that involve processing each character of a string in order are known as traversing the string. The simplest way to do this is to use the for loop:
+
+    for char in 'string':
+        print char
+
+The string module has numerous functions to help manipulate strings.
+
+    import string
+
+For example:
+
+    string.find('fruit','fr')
+
+This returns the position of the substring 'fr' in the string 'fruit'.
+
+## Lists
+
+A List is an ordered set of values, each of which is identified by an integer index. Lists are types of Sequences (like Tuples and Strings).
+
+Elements of a list can be accessed through the elements index, wrapped in square brackets. So list[0] refers to the first element in the list. (The index starts at zero.)
+
+Integer expressions can be used inside the brackets as long as they evaluate to a valid index value.
+
+List elements can also be accessed in reverse using negative indexes, such that list[-1] refers to the last element in the list.
+
+Lists can contain objects of other types, including other lists. This is known as nesting the list. A list containing other lists can be used to create matrices.
+
+Nested list elements can be accessed like so:
+
+    >>>list[1][2]
+
+The brackets are evaluated from left to right, so this refers to the third element of the second element of list.
+
+The range() function can be used to generate a list of consecutive integers.
+
+The len() function returns the number of elements in a list.
+
+_in_ is a boolean function that test if an element is present in a list.
+
+    >>>list = ['one','two']
+    >>>'one' in list
+    True
+    >>>'three' in list
+    False
+
+In can be reversed using 'not'.
+    
+    >>>'three' not in list
+    True
+
+List can be traversed using a for loop.
+
+    for variable in list:
+        print variable
+
+Similar to Strings and Tuples, lists can be concatenated (+), repeated/multiplied (*) and sliced (list[2:4]).
+
+Unlike Strings and Tuples, Lists are mutable.
+
+    >>>list[0] = "update"
+
+This will change the first element of the list.
+
+The slice functionality helps update sections of a list.
+
+For example:
+
+    >>>list[1:3] = [1,2] # updates the second and third elements
+    >>>list[1:3] = [] # deletes the second and third elements
+    >>>list[1:1] = [1,2] # squeezes these elements into the list
+
+An alternate way of deleting elements is using the del command.
+    
+    >>>del list[1]
+
+List can be aliased so that more than one variable can refer to the same list.
+
+    >>>list1 = [1,2,3]
+    >>>list2 = list1
+    
+However, often you will want a copy, or clone, of the list, rather than an alias. This can be done using an empty slice operator.
+
+    >>>list3 = list1[:]
+
+Now list3 can be modified without affecting the original list.
+
+Seemed strange to me, but when lists are passed to a function as an argument, it's actually a reference to the original list that is passed (rather than a new copy of the list).
+
+Therefore is the function amends the list, the caller sees those amendments.
+
+### List Comprehesions
+
+Comperhensions provide a conscise way to create lists.
+
+For example:
+    
+    squares = [x**2 for x in range(10)]
+    print squares
+    [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
+
+List Comprehensions are square brackets containing an expression followed by a for clause.
+
+Optionally, additional for and if clauses can be added.
+
+    my_list = [(x, y) for x in [1,2,3] for y in [3,1,4] if x != y]
+    print my_list
+    [(1, 3), (1, 4), (2, 3), (2, 1), (2, 4), (3, 1), (3, 4)]
+
+## Dictionaries
+
+Dictionaries are another compound data type. Unlike Lists, which use integers for the indices, dictionaries can use any, immutable data type (usually strings).
+
+Dictionaries are usually defined by curly brackets.
+
+    dict = {}
+    dict['key'] = 'value'
+
+Or they can be assigned all at once.
+
+    dict = {    'key1' : 'value1',
+                'key2' : 'value2'}
+
+The items in a dictionary are known as key-value pairs.
+
+The del function removes a pair from the dictionary.
+
+    del dict('key')
+
+The len function gives the number of pairs in a dictionary.
+
+    len(dict)
+
+The keys _method_ returns all the keys in a dictionary.
+
+    dict.keys()
+
+Similarly the .values() and .items() methods return the values and the key-value pairs in a list.
+
+The has_key method returns True if the key is present in the dictionary.
+
+    dict.has_key('key')
+
+Like lists, dictionaries can be aliased. If you want a copy, then the copy method can be used.
+
+    copy = dict.copy()
+
+The .get method returns a value for the given key, if the value isn't found, then the default is returned instead.
+
+    dict.get(key, default=None)
+
+There doesn't appear to be a built-in method for sorting dictionaries. Can try using the .items method to export the dictionary to a list, and use the list's sort method.
+
+Dictionaries can be used to improve the efficiency of the fibonacci algorithm, by storing values that have already be calculated. Here is a neat example.
+
+    previous = {0:1, 1:1} 
+    
+    def fibonacci(n): 
+      if previous.has_key(n): 
+        # print previous
+        return previous[n]
+      else: 
+        newValue = fibonacci(n-1) + fibonacci(n-2) 
+        previous[n] = newValue 
+        # print previous
+        return newValue 
+    
+    print fibonacci(6)
+
+Dictionaries also provide an elegant method for creating histograms for counts of letters in a phrase.
+
+    letterCounts = {} 
+    for letter in "Mississippi": 
+        letterCounts[letter] = letterCounts.get (letter, 0) + 1 
+    print letterCounts
+
+
+## Functions
+
+Functions can return values using the _return_ statement.
+
+    return return_value
+
+_return_ end processing in the current function and returns the flow to the point in the code that called the function.
+
+It's good practice to ensure that every branch of the function ends in a return. If a function completes without a return, then it returns None.
+
+
+### Composition
+
+Functions can be called from other functions. This is called functional composition.
+
+Composition can be used to build up complicated programs from simple functions.
+
+### Recursion
+
+Functions can also call themselves. This is called recursion.
+
+## Methods
+
+Methods are similar to functions in that they accept arguments and return values. They use a different syntax (dot notation).
+
+    dict.has_key('key')
+
+## Newton Raphson Method (Approximating Roots of Functions)
+
+Roots (or zeros) of a function are values of x such that f(x) = 0.
+
+Newton Raphson is a method of approximating the root of a function, that makes successively better approximations. It doesn't work for all functions.
+
+For a function f(x) with a derivative f'(x), it begins by making an estimated start point x0.
+
+Then we can improve that estimate:
+    
+    x1 = x0 - f(x0)/f'(x0)
+
+The method is repeated, each time improving the estimate:
+
+    xn+1 = xn - f(xn)/f'(xn)
+
+Visualise as repeatedly drawing a tangent on to a function, then moving the estimate to where the tangent bisects x.
+
+-----
+
+Python is a general-purpose, high-level programming language whose design philosophy emphasizes code readability.Its use of indentation for block delimiters is unique among popular programming languages.
+
+Python supports multiple programming paradigms, primarily but not limited to object-oriented, imperative and, to a lesser extent, functional programming styles.
+
+The reference implementation of Python (CPython) is free and open source software and has a community-based development model, as do all or nearly all of its alternative implementations. CPython is managed by the non-profit Python Software Foundation
+
+It is _dynamically typed_, meaning the variable types don't have to be explicitely declared, but are set by the value added to the variable. The type can be converted by explicitely typecasting. e.g. y = float(3).
+
+Block comments are delimitted by triple single quotes '''. Inline comments are pre-pended with a hash symbol #.
+
+Numerous data types are supported including String, Integer, Float as well as compound data types like List, Dictionary and Tuple.
+
+String is a special case and can be treated as a List of Characters. Therefore Strings can be operated on similar to lists: sliced, added and multiplied. Strings however are not mutable, so you cannot add and integer into a string.
+
+String are defined by single or double quotes. e.g. y = "String".
+
+Lists are compound data types, that contain multiple variables that can be of different data types.
+
+Lists are mutable, so you can add and modify the contents and datatypes within lists.
+
+Lists are defined by square brackets. e.g. y = ["String", 1, ["Another", "List"]]
+
+Adding two list will append one to the other. And this works to concatenate strings too.
+
+Multiplying a list will duplicate the list and add them all together.
+
+There are two main functions for accepting user input via the keyboard.
+
+y = input('Enter a number') # accepts numbers.
+y = raw_input('Enter a string') ## accepts string inputs.
+
+Or to accept multiple variables from the same input.
+
+x,y = input('Enter numbers for x and y, seperated by a comma')
+
+The while loops repeats an action until a condition becomes false.
+
+while <condition>:
+ <action>
+
+The for loop iterates over a compound data type.
+
+for <variable_name> in <compound_data_type>:
+ <action>
+
+The for loop can be combined with the range() function to repeat an action a specific number of times.
+
+for <variable> in range(n):
+ print <variable>
+
+If can be used to set up conditions. If can be combined with elif and else:
+
+if <condition 1>:
+ <action 1>
+elif <condition 2>:
+ <action 2>
+else:
+ <action 3>
+
+The break command can be used to terminate a loop, while the continue command will skip the remaining code block within the loop and skip to the next loop.
+
+# Classes in Python
+
+Python's class mechanism add classes with a minimum of syntax and semantics.
+
+Python classes provided standard features of OO programming.
+
+Like modules, classes are created at runtime and can be modified after creation.
+
+Normally classes and their data are public, unless specifically set to private.
+
+Classes themselves are objects.
+
+Types can be used as base classes for extension by users and most built in operators can be redefined for class instances.
+
+## Background Info
+
+A namespace is a mapping from names to objects.
+
+There is no relation between names in different namespaces. For example, a function called _maximise_ can be used in different modules without confusion - as users prefix it with the module name.
+
+We can use the term _attribute_ for any name following a dot. e.g. objname.attribute.
+
+Attributes may be read-only or writable. Module attributes are writable.
+
+Namespaces are created at different moments and have different lifetimes. The namespace containing the built-in names is created when python interpreter starts up and is never deleted. These names live in a module called __builtin__.
+
+The local namespace for a function is created with the function is called, and deleted (forgotten) when the function returns or raises and exception that isn't handled in the function.
+
+A _scope_ is a textual region of a program where a namespace is directly accessible (where you don't have to qualify the name).
+
+At any time during execution there are at least three nested scopes whose naespaces are directly accessible:
+
+1. The innermost scope, which is searched first, contains the local names.
+2. The scopes of any enclosing function. This is non-local, but also non-global.
+3. The next to last scope contains the modules global names.
+4. The outermost scope contains the built-in names.
+
+
+## Classes
+
+Classes introduce a little bit of new syntax, three new object types and some new semantics.
+
+Functions are methods.
+ 
+##Inheritance
+ 
+The syntax for a derived class is:
+ 
+    class DerivedClass(BassClass):
+        ...
+ 
+The name BassClass must be defined in a scope containing the derived class definition, or if the class is defined in another module you can state.
+ 
+    class DerivedClass(module.BassClass):
+        ...
+ 
+Derived classes may override methods of their base classes.
+ 
+Python has two built-in functions that work with inheritance.
+ 
+1. Use isinstance() to check an instance type.
+2. Use issubclass() to check class inheritance.
+
+## Try Catch Statements
+
+The simplest way to handle exceptions is with a "try-except" block. For example, the following code will try to divide two numbers, and prints an error message if it tries to divide by zero.
+
+    (x,y) = (5,0)
+    try:
+        z = x/y
+    except ZeroDivisionError:
+        print "divide by zero"
+
+Sometimes you'll want to print out all error messages.
+
+    import sys
+    try:
+        untrusted.execute()
+    except: # catch *all* exceptions
+        e = sys.exc_info()[0]
+        write_to_page( "<p>Error: %s</p>" % e )
+
+Though normally you'll want to determine the type of error and handle it accordingly. The built in types of exceptions are shown here.
+
+http://docs.python.org/library/exceptions.html
+
+# Range vs XRange
+(Python 2.7)
+
+# Break vs Return
+
+# Python Profiling
+
+Python includes a profiler called cProfile. It not only gives the total running time, but also times each function separately, and tells you how many times each function was called, making it easy to determine where you should make optimizations.
+
+You can call it from within your code, or from the interpreter, like this:
+
+import cProfile
+cProfile.run('foo()')
+Even more usefully, you can invoke the cProfile when running a script:
+
+python -m cProfile myscript.py
+To make it even easier, I made a little batch file called 'profile.bat':
+
+python -m cProfile %1
+So all I have to do is run:
+
+profile euler048.py
+And I get this:
+
+1007 function calls in 0.061 CPU seconds
+
+Ordered by: standard name
+ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+    1    0.000    0.000    0.061    0.061 <string>:1(<module>)
+ 1000    0.051    0.000    0.051    0.000 euler048.py:2(<lambda>)
+    1    0.005    0.005    0.061    0.061 euler048.py:2(<module>)
+    1    0.000    0.000    0.061    0.061 {execfile}
+    1    0.002    0.002    0.053    0.053 {map}
+    1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler objects}
+    1    0.000    0.000    0.000    0.000 {range}
+    1    0.003    0.003    0.003    0.003 {sum}
+EDIT There is a great talk on profiling from PyCon here: http://blip.tv/file/1957086
+
+
+##Conventions
+
+1. Data attributes override method attributes with the same name. It therefore makes sense to use a naming convention to avoid conflicts. e.g capitalise method name.
+
+2. Often, the first argument of a method is called _self_. This is a convention, with no special meaning.
+
+
+-----------------
+* [Learning Math and Science Using Python](http://www.iuac.res.in/~elab/phoenix/docs/Maths/mapy.pdf), Ajith Kumar B.P., June 2010

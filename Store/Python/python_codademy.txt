@@ -1,0 +1,43 @@
+# Python Notes
+
+## Dot Notation Tip
+
+When calculating the length of the string you can use the method len() like so:
+
+    len("String")
+
+But when you convert to uppercase you use the method upper() like so.
+
+    "String".upper()
+
+This difference in syntax is apparently because len() is a general method not just tied to string (e.g. it can be used on arrays). Not sure that makes sense to me.
+
+I'd originally thought that len() was a general function and upper() was a method of the string object, but the text calls them both methods. We'll get to functions later.
+
+# Functions
+
+Functions are defined as follows:
+
+    def spam():
+        """ Docstring """
+    	print "Eggs!"
+
+And are called using the following:
+
+    spam()
+
+Functions can take **parameters** between the parentheses so that you can pass **arguments** to the function.
+
+There are also something called splat arguments that can be used when you don't know how many arguments are going to be needed.
+
+    def favorite_actors(*args):
+        """Prints out your favorite actorS (plural!)"""
+        print "Your favorite actors are:" , args
+        
+        
+    favorite_actors("Michael Palin", "John Cleese", "Graham Chapman")
+
+# Zip Lists
+
+
+

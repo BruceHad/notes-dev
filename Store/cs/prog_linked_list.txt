@@ -1,0 +1,25 @@
+#Linked Lists
+
+21/12/2011
+
+Linked Lists are a simple data structure that can sometimes be used to implement other data types like stacks, queues and associative arrays.
+
+The benefit of a linked list over an array is that elements can be inserted or removed without reorganisation of the entire structure. Insertion/Removal operations can be done in constant time.
+
+Data in the linked list is not stored contiguously in memory.
+
+The disadvantage of linked lists over an array is that it is difficult to access any random element directly, or index the list. For many common operations, the entire list may need to be scanned.
+
+Each record in a linked list is called and element or a node.
+
+Each node contains a next pointer, which contains the address of the next node, and the data (or information, value, cargo or payload) fields.
+
+The first node is called the head, while tail may refer to the remainder of the list  or the last node.
+
+
+
+
+
+-----
+
+ * [Linked List on Wikipedia](http://en.wikipedia.org/wiki/Linked_list)

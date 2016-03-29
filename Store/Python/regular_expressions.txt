@@ -1,0 +1,85 @@
+RegEx provides a terse means to 'match' strings of text, particular characters, words or patterns. A regular expression, often called a pattern, is an expression that specifies a set of strings.
+
+
+Regular expressions are handled by the re package.
+
+    import re
+
+In python, the regular expression pattern is often compiled into bytecode before being executed.
+
+	import re
+	the_string = '<html><head><title></title>'
+	the_regex = re.compile('\d')
+	print the_regex.findall(the_string)
+
+## Simple Match
+
+The simplest use for regex is to find a matching string, or pattern, within another string.
+
+Most characters will match to themselves. So 'abc' will match against any occurences of 'abc' within the target string.
+
+There are special meta-characters that may not work this way.
+
+. ^ $ * + ? { } [ ] ( ) \ |
+
+## Set of Characters
+
+The square brackets indicate a pattern match to a set of data. e.g. where 'abc' looks for any occurence of the full 'abc' string, [abc] or [a-c] looks for occurences of any characters between a and c.
+
+Character sets can be inverted using the carat symbol. e.g. [^a-c] will find any character not in a to c.
+
+There are also a number of special codes that can be used within character sets.
+
+\d - digits (0-9)	\D - not digits
+\s - whitespace		\S - not whitespace
+\w - alpha-numeric	\W - not alpha-numeric
+\A - matches at start	\Z - matches at end
+\b - word boundary. Note \b is also the backspace character so you need an 'r'. See docs.
+\B - not a word boundary
+Note, within the square brackets, the special meta-characters can be used like normal characters, i.e. they lose their special qualities. (This seems to be contradicted above with the carat example.)
+
+Different patterns can be combined in a character set. e.g. [\d,a-c] would match any digit or characters a, b or c.
+
+## Other Meta Characters
+
+. (re.DOTALL) -- Matches anything except a newline character.
+| (OR) -- A|B will match either A or B
+^ -- Only matches at the beginning of the string (or if MULTILINE flag has been set at the beginning of each line).
+$ -- Only matches at the end of a line.
++ -- Matches **one** or more times.
+* -- Matches **zero** or more times.
+
+
+## Matching Commands
+
+First you can compile the regex expression:
+
+	import re
+	p = re.compile('[a-Z]')
+
+The use on the the matching commands against the string.
+
+
+match() --Determine if the RE matches at the beginning of the string.
+search() -- Scan through a string, looking for any location where this RE matches.
+findall() -- Find all substrings where the RE matches, and returns them as a list.
+finditer() -- Find all substrings where the RE matches, and returns them as an iterator.
+split() -- Split string by the matches of the regular expression up to maxsplit.
+
+
+	m = p.findall("Search String")
+	print m
+
+You can also use some commands to find information related to the match object (which is the object returned by match).
+
+group() -- Return the string matched by the RE
+start() -- Return the starting position of the match
+end() -- Return the ending position of the match
+span() -- Return a tuple containing the (start, end) positions of the match
+
+	m.group()
+
+---------------
+
+* [Regular Expressions](http://en.wikipedia.org/wiki/Regular_expression)
+* [Python Regular Expressions](http://code.google.com/edu/languages/google-python-class/regular-expressions.html)

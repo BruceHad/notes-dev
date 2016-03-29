@@ -1,0 +1,41 @@
+# Reverse Polish Notation
+
+Reverse Polish notation (RPN) is a mathematical notation wherein every operator follows all of its operands.
+
+    3 + 5 becomes 3 5 +
+
+If there are multiple operations, the operator is given immediately after its second operand.
+
+    3 âˆ’ 4 + 5 becomes 3 4 - 5 +
+
+The point of this appears to be to get rid of brackets while remaining un-ambiguous.
+
+Spoj 4. Transform the Expression -- Problem code: ONP
+
+Transform the algebraic expression with brackets into RPN form (Reverse Polish Notation). 
+
+Two-argument operators: +, -, *, /, ^ (priority from the lowest to the highest), brackets ( ). Operands: only letters: a,b,...,z. Assume that there is only one RPN form (no expressions like a*b*c).
+
+## Shunting Yard Algorithm
+
+* While there are tokens to be read:
+ ** Read a token.
+ ** If the token is a number, then add it to the output queue.
+ ** If the token is a function token, then push it onto the stack.
+ ** If the token is a function argument separator (e.g., a comma):
+   *** Until the token at the top of the stack is a left parenthesis, pop operators off the stack onto the output queue. If no left parentheses are encountered, either the separator was misplaced or parentheses were mismatched.
+ ** If the token is an operator, o1, then:
+   *** while there is an operator token, o2, at the top of the stack, and either o1 is left-associative and its precedence is less than or equal to that of o2, or o1 has precedence less than that of o2,
+     **** pop o2 off the stack, onto the output queue;
+    *** push o1 onto the stack.
+  ** If the token is a left parenthesis, then push it onto the stack.
+  ** If the token is a right parenthesis:
+    *** Until the token at the top of the stack is a left parenthesis, pop operators off the stack onto the output queue.
+    *** Pop the left parenthesis from the stack, but not onto the output queue.
+    *** If the token at the top of the stack is a function token, pop it onto the output queue.
+    *** If the stack runs out without finding a left parenthesis, then there are mismatched parentheses.
+* When there are no more tokens to read:
+  ** While there are still operator tokens in the stack:
+   *** If the operator token on the top of the stack is a parenthesis, then there are mismatched parentheses.
+   *** Pop the operator onto the output queue.
+* Exit.

@@ -1,0 +1,21 @@
+minimap shows a small version of your code. You will never ever need the scrollbar again and can instantly browse through the currently opened file with ease.
+
+The sidebar is hidden by default (to show it press Ctrl + K, Ctrl + B). In its default state it only shows the currently opened files, but can be extended to a fully-fledged file browser. 
+
+But even without that Sublime Text 2 makes it a breeze to find and open files. Just hit Ctrl + P, type a few characters and magically a list of all matching files gets displayed, even when not entered in sequence. 
+
+Better recall its name: "Goto Anything", which is incredibly useful and will be your single best companion. No more searching for that single file you can't remember the exact name in a long, long list of other files. Even subdirectories are considered. 
+
+"Goto Anything" even offers more. Enter a colon (:) to jump to a line (shortcut: Ctrl + G / Control + G), with an @ all previously used methods are shown (Ctrl + R / Command + R) and entering a # allows you to search inside the document (CTRL + ; / Control + ;).
+
+There are two ways to work with projects in Sublime Text 2:
+
+* File > Open Folder, which starts with the chosen folder as the basis for your work. All file operations relate to this directory, like "Goto Anything" and the Advanced Search.
+* Projects: Apart from the above-noted approach, there is also the neat possibility to combine your files and directories into projects. Just go to a folder like noted above, open some files and choose Project > Save project as to save the project file onto your hard drive. 
+
+To switch between them just hit Ctrl + Alt + P. Previous projects can also be found under Project > Recent projects. As soon a file or folder within the project is changed or added, these changes are preserved when you close the project. Even the position of the caret gets saved.
+
+
+
+--------------
+* http://www.sublimetext.com/2

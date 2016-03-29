@@ -1,0 +1,84 @@
+# Browser Compatability Quirks
+
+What do I want?
+
+ * Support for IE8 and above.
+ * IE7 and lower fall back to basic styles.
+ * All web pages use transparency where available.
+ * Where tranparency not available, the background should be a solid, fully opaque colour.
+
+So my only real problem is getting Media Query support for older versions of IE which can be done with a little javascript.
+
+    <!--[if lt IE 9]>
+        <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <![endif]-->
+
+## RGBA Browser Support
+
+This is a little tip I only found recently. I'd previously been using the CSS opacity settings to make give a box some transparency. The problem here is that it sets the transparency on all the contents of the box including the text, where I generally wanted to make the background transparent, but leave the text fully opaque. The workaround required some fairly complicated hacks, using overlapping divs and such like.
+
+But now we have a solution -- Alpha transparency in the background color settings.
+
+    div {
+        background: rgba(100, 100, 100); /* Safe fall back */
+        background: rgba(100, 100, 100, 0.5); 
+    }
+
+Unfortunately this has patchy support, but it is working on all the latest versions of the main browsers -- IE9, Firefox 3, Chrome, Opera 10, Safari 3. Lord knows though how it will look across all the different mobile browsers.
+
+So I need to make sure the transparent boxes are set to work where they can, but fall back to a solid box colour when tranparency isn't available.
+
+To help, we can use Conditional Comment and/or Media Queries.
+
+## Conditional Comments
+
+Conditional comments are hacks used to hide and show CSS to specific versions of IE. They are used in HTML files and use the HTML commments <!-- --> format to hide the contents from other browsers. IE however will recognise the special conditional comments syntax.
+
+    <!--[if IE 6]
+        ... content ...
+    <![endif] -->
+
+The HTML content in the above example will only be visible in IE version 6. You can also use lt (less than), gt(greater than), lte(less than or equal) or gte (greater than or equal) to amend the versions.
+
+There is a special code that apparently works in non-IE browsers but will be ignored by IE.
+
+    <!-- [if !IE]> -->
+        ... content ...
+    <!-- <![endif] -->
+
+Note the differences in syntax.
+
+## Media Queries
+
+HTML 4 included options for serving up different styles sheets depending on the media the page was viewed on (commonly "screen" or "print"). This was extended with Media Queries, which:
+
+
+>consists of a media type and zero or more expressions that check for the
+>conditions of particular media features. Among the media features that can be
+>used in media queries are 'width', 'height', and 'color'. 
+
+This gives us finer control over the layout for different devices, which is useful if you are looking for progressive enhancement in your design. For example I generally have a basic stylesheet that works across all devices and then adjust that for wide screen using the following media query.
+
+    <link rel="stylesheet" media="screen and (min-width:650px)" 
+    href="wide.css">
+
+This means the 'wide.css' stylesheet will only display on devices/windows that are wider than 650px.
+
+Quick Tip: For a more consitent rendering in mobile browsers it is common to set the viewport width in meta tags on your pages.
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"">
+
+## Putting that Together
+
+
+
+
+-------
+* http://www.quirksmode.org/css/condcom.html
+* http://www.w3.org/TR/css3-mediaqueries/
+* http://www.html5rocks.com/en/mobile/mobifying/
+* http://en.wikipedia.org/wiki/Progressive_enhancement
+* http://en.wikipedia.org/wiki/Alpha_compositing
+* http://caniuse.com/css-mediaqueries
+* http://css-tricks.com/examples/RGBaSupport/
+* http://webdesignerwall.com/tutorials/responsive-design-with-css3-media-queries

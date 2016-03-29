@@ -1,0 +1,84 @@
+#Objects and Classes
+
+Python supports multiple programming paradigms, primarily Object Oriented design.
+
+You can define your own classes, inherit from your own or built-in classes.
+
+To define a class simply using the reserved work 'class'.
+
+	class MyClass:
+		pass
+
+Note: By convention, class name are capitalised.
+
+
+##Inheritance
+
+In python, the ancestor of a class is listed in parentheses after the class name. 
+
+	class FileInfo(UserDict):
+
+Python supports multiple inheritance.
+
+##Initialise
+
+Python classes don't have explicit contructors and destructors, but they do have an __init__ method, which can do the same.
+
+	class FileInfo(UserDict):
+		"""
+			Store Meta Data
+		"""
+		def __init__(self, filename=None):
+			UserDict.__init__(self)
+			self["Name"] =filename
+
+__init__ should be called immediately after and instance of the class is created.
+
+The first argument of every class method is always a reference to the current instance of the class (by convention this is always names 'self').
+
+In the init method self refers to the newly created object. In other methods it refers to the instance whose method was called. (You do not need to specify 'self' when calling the method, python will add it for you).
+
+In Python, the ancestor class must be called explicitely.
+
+To instantiate a class simply call the class as if it were a function, passing the arguments that the __init__ function defines.
+
+	import fileinfo
+	finstance = fileinfo.FileInfo("path/to/file")
+
+Note, every class has a built-in attributes called __class__ and __doc__ which refers back the to the class of the object, and to the docstring associated with the object.
+
+	finstance.__class__
+	finstance.__doc__
+
+##Garbage Collection
+
+In general, there is no need to explicitely free instance and memory leaks are rare in Python. 
+
+## Data & Class Attributes
+
+Python classes can have data attributes -- variables that are associated with the object (instance of the class). Data attributes can be referenced outside the code by qualifying it with the instance name
+
+	instance.variable
+
+To reference that same variable within the class, it should be qualified with the self qualifier.
+
+	self.variable
+
+By convention, all data attributes are initialised to reasonable values in the __init__ method. This isn't required.
+
+Class attributes are variables owned by the class (rather than the instance). Class Attributes can be used a class-level constants (even though it's technically possible to change them).
+
+	class counter:
+		count = 0
+		def __init__(self):
+			...
+In the above example, the variable called count is a class variable. This can be reference by counter.count.
+
+##Subclassing
+
+
+
+
+
+
+

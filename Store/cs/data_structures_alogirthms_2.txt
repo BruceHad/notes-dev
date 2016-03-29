@@ -1,0 +1,128 @@
+Notes:
+
+#Data Structures and Algorithms with Object-Oriented Design Patterns in Python--Bruno R. Preiss
+
+http://www.brpreiss.com/books/opus7/html/book.html
+
+06/03/2012
+
+Fundamental data structures and algorithms are the basic elements from whic software is constructed.
+
+Understanding data structures requires understanding of:
+
+* How information is arranged in the computers memory.
+* Algorithms that manipulate information.
+* Performance properties of given data structures and algorithms, such that appropriate structures can be used in given situations.
+
+This books also covers OO Design patterns. Objects have advantage of combining data and process into the same, well, object. 
+
+OO provides both abstraction and encapsulation.
+
+It also deals with classification and relationships.
+
+The primary relationship in OO design is derivation, which includes inheritance.
+
+Some common class design patterns:
+
+**Containers** - Holds other objects. Containers have capacity, functionality for adding and removing objects, and can be empty or full. _Searchable_ containers provide efficient search operations.
+
+**Iterators** - Provide means to access all objects within a container.
+
+**Visitors** - Represents an operation to be performed on all objects in a container.
+
+**Cursor** - Represents the position of an object in an ordered container.
+
+**Adapter** - Converts the interface of a class into the interface expected by another class.
+
+**Singleton** - Used when only one instance of a class should be possible. Provides method to access that object.
+
+## Analysis of Algorithms
+
+An algorithm is a step by step procedure for accomplishing some task. A programming algorithm can be analysed.
+
+* Run Time as a function of it's inputs.
+* Memory space.
+* Size/Complexity/Robustness of the code.
+
+The run time is important, though very complex to analyse accurately. Even at a simplified level, where we assume every operation will take a single processor cycle, it gets very complicated.
+
+##Abstract Data Types
+
+Examples of <abbr title="Abstract Data Type>ADT</abbr>: Stacks, Queues, Deques, Ordered Lists, Sorted Lists, Hash Tables, Scatter Tables, Priority Queues, Sets and Graphs.
+
+In most cases, these ADTs can be implemented using an array or some kind of linked list. Therefore these are known as Foundational Data Structures.
+
+In Python, a List is a common data type.
+
+	a = [0,1,2,3,4]
+
+Lists can take negative indexes, and start at index 0, where you might prefer to have an array that starts at a given (non zero) value, and doesn't allow negative indexes.
+
+In Python we can program an array class to do this.
+
+      class Array(object):
+        def __init__(self, length=0, baseIndex=0):
+          assert length >= 0
+          self._data = range(length)
+          self._baseIndex = baseIndex
+      
+        def __copy__(self):
+          result = Array(len(self._data))
+          for i, datum in enumarate(self._data):
+            result._data[i] = datum
+          result._baseIndex = self._baseIndex
+          return result
+        
+        def getOffset(self, index):
+          offset = index - self._baseIndex
+          if offset < 0 or offset >= len(self._data):
+            raise IndexError
+          return offset
+      
+        def __getitem__(self,index):
+          return self._data[self.getOffset(index)]
+      
+        def __setitem__(self, index, value):
+          self._data[self.getOffset(index)] = value
+      
+        def getData(self):
+          return self._data
+        
+        data = property (fget = lambda self: self.getData())
+      
+        def getBaseIndex(self):
+          return self._baseIndex
+      
+        baseIndex = property(
+          fget = lambda self: self.getBaseIndex(),
+          fset = lambda self, value: self.setBaseIndex(value))
+      
+        def __len__(self):
+          return len(self._data)
+      
+        def setLength(self,value):
+          if len(self._data) != value:
+            newData = [ None for i in range(value) ]
+            m = min (len(self._data), value)
+            for i in xrange(m):
+              newData[i] = self._data[i]
+            self._data = newData
+      
+        length = property (
+          fget = lambda self: self.__len__(),
+          fset = lambda self, value: self.setLength(value))
+      
+      array = Array(5, 1)
+      print array[2]
+      array[2] = 5
+      print array[2]
+
+Not saying I understand all this, but interesting new code features:
+
+Inputs can be validated using the assert function. e.g. assest length > 0 will return an asserterror if you try to pass a value less than 1. Usefull for ???'s 'defensive programming' possibly.
+
+There are also some special functions in there, indicated by the double underline. For example __getitem__ and __setitem__. These seem to allow the shorthand way of setting a getting contents of the array. e.g. array[2] = 5 instead of array.__setitem(2,5).
+
+
+
+

@@ -1,0 +1,1300 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"g",
+				"gulp"
+			],
+			[
+				"fon",
+				"font-family"
+			],
+			[
+				"font-",
+				"font-size"
+			],
+			[
+				"rg",
+				"rgba(r,g,b,a)"
+			],
+			[
+				"te",
+				"text-decoration"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"text",
+				"text-decoration"
+			],
+			[
+				"border-co",
+				"border-collapse"
+			],
+			[
+				"manual",
+				"manual-table"
+			],
+			[
+				"margin-",
+				"margin-top"
+			],
+			[
+				"over",
+				"overflow"
+			],
+			[
+				"item",
+				"item-container"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"masteh",
+				"masthead-nav"
+			],
+			[
+				"list-",
+				"list-style-position"
+			],
+			[
+				"mars",
+				"marslaw-logo-medium"
+			],
+			[
+				"text-",
+				"text-align"
+			],
+			[
+				"backgr",
+				"background-color"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"b",
+				"bitarray_size"
+			],
+			[
+				"__",
+				"__init__"
+			],
+			[
+				"rand",
+				"random_hash"
+			],
+			[
+				"num_",
+				"num_elements"
+			],
+			[
+				"sear",
+				"search_terms"
+			],
+			[
+				"marg",
+				"margin-bottom"
+			],
+			[
+				"mar",
+				"margin-bottom"
+			],
+			[
+				"bacgroun",
+				"background-color"
+			],
+			[
+				"test",
+				"testResults"
+			],
+			[
+				"con",
+				"convertData"
+			],
+			[
+				"data",
+				"dataObj"
+			],
+			[
+				"dat",
+				"dataObj"
+			],
+			[
+				"ra",
+				"random"
+			],
+			[
+				"ge",
+				"generateArray"
+			],
+			[
+				"ran",
+				"randArray"
+			],
+			[
+				"to",
+				"toString"
+			],
+			[
+				"bacg",
+				"background-color"
+			],
+			[
+				"chop",
+				"chopContainer"
+			],
+			[
+				"get",
+				"getData"
+			],
+			[
+				"border-c",
+				"border-collapse"
+			],
+			[
+				"in",
+				"inherit"
+			],
+			[
+				"lin",
+				"line-height"
+			],
+			[
+				"link",
+				"link-text-color"
+			],
+			[
+				"get_t",
+				"get_template_directory_uri"
+			],
+			[
+				"list-sty",
+				"list-style-type"
+			],
+			[
+				"no",
+				"no-repeat"
+			],
+			[
+				"content",
+				"content-background-color"
+			],
+			[
+				"pso",
+				"position"
+			],
+			[
+				"po",
+				"position"
+			],
+			[
+				"tr_bro",
+				"tr_brochure_section"
+			],
+			[
+				"body-font",
+				"body-font-stack"
+			],
+			[
+				"header-fon",
+				"header-font-color"
+			],
+			[
+				"bord",
+				"border"
+			],
+			[
+				"screen",
+				"screen-reader-text"
+			],
+			[
+				"cont",
+				"container"
+			],
+			[
+				"header",
+				"header-background"
+			],
+			[
+				"co",
+				"color"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"exp",
+				"expandLs"
+			],
+			[
+				"active",
+				"activeRule"
+			],
+			[
+				"eve",
+				"event"
+			],
+			[
+				"ac",
+				"activeRule"
+			],
+			[
+				"canvas",
+				"canvas-wrapper"
+			],
+			[
+				"time",
+				"timeoutId"
+			],
+			[
+				"timeo",
+				"timeoutId"
+			],
+			[
+				"tim",
+				"timeoutId"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"inl",
+				"inline-block"
+			],
+			[
+				"comm",
+				"commandStr"
+			],
+			[
+				"commandStr",
+				"commandString"
+			],
+			[
+				"command",
+				"commandString"
+			],
+			[
+				"rotate",
+				"rotateAngle"
+			],
+			[
+				"step",
+				"stepLength"
+			],
+			[
+				"comman",
+				"commandString"
+			],
+			[
+				"com",
+				"commandString"
+			],
+			[
+				"set",
+				"setCommandString"
+			],
+			[
+				"sta",
+				"startStr"
+			],
+			[
+				"d",
+				"dragonString"
+			],
+			[
+				"sc",
+				"scrolledout"
+			],
+			[
+				"scrollT",
+				"scrollTop"
+			],
+			[
+				"padding",
+				"padding-bottom"
+			],
+			[
+				"padd",
+				"padding-top"
+			],
+			[
+				"min-",
+				"min-width"
+			],
+			[
+				"lsS",
+				"lsString"
+			],
+			[
+				"tAS",
+				"taskDates"
+			],
+			[
+				"conv",
+				"convertDate"
+			],
+			[
+				"task",
+				"task_list"
+			],
+			[
+				"add",
+				"addDays"
+			],
+			[
+				"date",
+				"date_complete"
+			],
+			[
+				"log",
+				"log"
+			],
+			[
+				"da",
+				"dailyTasks"
+			],
+			[
+				"act",
+				"actTasks"
+			],
+			[
+				"l",
+				"log"
+			],
+			[
+				"st",
+				"startDate"
+			],
+			[
+				"ne",
+				"newValue"
+			],
+			[
+				"getT",
+				"getTasks"
+			],
+			[
+				"this",
+				"thisDay"
+			],
+			[
+				"start",
+				"start_date"
+			],
+			[
+				"tasks",
+				"tasksDone"
+			],
+			[
+				"startD",
+				"startDate"
+			],
+			[
+				"end",
+				"endDateString"
+			],
+			[
+				"bckr",
+				"background-color"
+			],
+			[
+				"main",
+				"main-page"
+			],
+			[
+				"fo",
+				"font-style"
+			],
+			[
+				"a",
+				"a1a1a1"
+			],
+			[
+				"bacl",
+				"background-color"
+			],
+			[
+				"temperatu",
+				"Temperatures"
+			],
+			[
+				"is",
+				"isActive"
+			],
+			[
+				"temperat",
+				"temperature"
+			],
+			[
+				"sprite",
+				"spritepos"
+			],
+			[
+				"c",
+				"celcius"
+			],
+			[
+				"tempera",
+				"temperatures"
+			],
+			[
+				"border-r",
+				"border-right"
+			],
+			[
+				"min",
+				"min-height"
+			],
+			[
+				"paddin",
+				"padding-left"
+			],
+			[
+				"borde",
+				"border"
+			],
+			[
+				"border",
+				"border-top"
+			],
+			[
+				"background-c",
+				"background-color"
+			],
+			[
+				"rig",
+				"RIGHT"
+			],
+			[
+				"tRU",
+				"True"
+			],
+			[
+				"num",
+				"num_sprouts_left"
+			],
+			[
+				"new_",
+				"new_col"
+			],
+			[
+				"lef",
+				"LEFT"
+			],
+			[
+				"ri",
+				"RIGHT"
+			],
+			[
+				"nu",
+				"num_sprouts_eaten"
+			],
+			[
+				"ca",
+				"CashRegister"
+			],
+			[
+				"loon",
+				"loonies"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/home/treerock/Dropbox/Projects/feed-me/docs/feed-me.md",
+			"settings":
+			{
+				"buffer_size": 6110,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/treerock/Dropbox/Projects/feed-me/docs/rss.md",
+			"settings":
+			{
+				"buffer_size": 210,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/treerock/Dropbox/Projects/feed-me/hello_scraping.js",
+			"settings":
+			{
+				"buffer_size": 1402,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/treerock/Dropbox/Projects/feed-me/feed_scraping.js",
+			"settings":
+			{
+				"buffer_size": 1610,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/treerock/Dropbox/Projects/feed-me/json_output/output.json",
+			"settings":
+			{
+				"buffer_size": 97,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "Packages/LESS-build/LESS.sublime-build",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/LESS-build/LESS.sublime-build",
+					""
+				],
+				[
+					"Packages/LESS-build/LESS.sublime-build",
+					"Minify"
+				]
+			],
+			[
+				"Packages/LESS-build/LESS.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/lessc/lessc.sublime-build",
+					""
+				],
+				[
+					"Packages/lessc/lessc.sublime-build",
+					"Non-Minified"
+				]
+			],
+			[
+				"Packages/lessc/lessc.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "ins",
+		"selected_items":
+		[
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"short",
+				"HTMLPrettify: Set Keyboard Shortcuts"
+			],
+			[
+				"mark",
+				"Markdown Preview: Save to HTML"
+			],
+			[
+				"pa",
+				"Package Control: List Packages"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"brow",
+				"Preferences: Browse Packages"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"remov",
+				"Package Control: Remove Package"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Remove Package"
+			],
+			[
+				"",
+				"About"
+			],
+			[
+				"package",
+				"Preferences: Browse Packages"
+			],
+			[
+				"prv",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 459.0
+	},
+	"console":
+	{
+		"height": 146.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) ",
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			" import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			" import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) "
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/treerock/Dropbox/Projects/feed-me/output.json",
+		"/home/treerock/Dropbox/Projects/feed-me/json_output/output.json",
+		"/home/treerock/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+		"/home/treerock/.config/sublime-text-3/Packages/Default/Preferences.sublime-settings",
+		"/home/treerock/.config/sublime-text-3/Packages/User/JSON.sublime-settings",
+		"/home/treerock/Dropbox/Learning/1601-webtooling-udacity/Web Tooling and Automation.md",
+		"/home/treerock/Dropbox/Learning/1601-webtooling-udacity/Basic HTML Project/css/main.css",
+		"/home/treerock/Dropbox/Learning/1601-webtooling-udacity/Basic HTML Project/gulpfile.js",
+		"/home/treerock/Dropbox/Learning/1601-webtooling-udacity/Basic HTML Project/index.html",
+		"/home/treerock/Dropbox/Learning/1601-webtooling-udacity/Basic HTML Project/sass/extra.scss",
+		"/home/treerock/Dropbox/Learning/1601-webtooling-udacity/Basic HTML Project/sass/main.scss",
+		"/home/treerock/Dropbox/Learning/1601-webtooling-udacity/Basic HTML Project/Web Tooling and Automation.md",
+		"/home/treerock/Dropbox/Projects/feed-me/docs/feed-me.md",
+		"/home/treerock/Dropbox/Projects/feed-me/README.md",
+		"/home/treerock/Dropbox/Projects/feed-me/feed_scraping.js",
+		"/home/treerock/Dropbox/Projects/feed-me/hello_scraping.js",
+		"/home/treerock/Dropbox/Projects/feed-me/package.json",
+		"/home/treerock/Dropbox/Projects/feed-me/npm-debug.log",
+		"/home/treerock/Dropbox/Projects/feed-me/client/index.html",
+		"/home/treerock/Dropbox/Learning/1601-webtooling-udacity/sass/extra.scss",
+		"/home/treerock/Dropbox/Learning/1601-webtooling-udacity/index.html",
+		"/home/treerock/Dropbox/Learning/1601-webtooling-udacity/gulpfile.js",
+		"/home/treerock/Dropbox/Learning/1601-webtooling-udacity/sass/main.scss",
+		"/home/treerock/Dropbox/Notes/My Tools/googledrive_markdown.md",
+		"/home/treerock/Dropbox/Notes/Stats/Probability.txt",
+		"/home/treerock/Dropbox/Learning/1506-lpthw-book/LPTHW.md",
+		"/home/treerock/Dropbox/Projects/templates/README.md",
+		"/home/treerock/Dropbox/Projects/ReverseFizzbuzz/README.md",
+		"/home/treerock/Dropbox/Learning/1601-webtooling-udacity/css/main.css",
+		"/home/treerock/.config/sublime-text-3/Packages/HTML-CSS-JS Prettify/Default (Linux).sublime-keymap",
+		"/home/treerock/Dropbox/Learning/1601-webtooling-udacity/ud892-master/Lesson 2/gulpfile.js",
+		"/home/treerock/Dropbox/Learning/Probability.txt",
+		"/home/treerock/Dropbox/Learning/1305-datasci-coursera/README.md",
+		"/home/treerock/Dropbox/Notes/wordpress.md",
+		"/home/treerock/Dropbox/Notes/tools.md",
+		"/home/treerock/Dropbox/Learning/eloquent_javascript.md",
+		"/home/treerock/Dropbox/Notes/templating.md",
+		"/home/treerock/Dropbox/Notes/sysadmin.md",
+		"/home/treerock/Dropbox/Notes/sql_explain.md",
+		"/home/treerock/Dropbox/Notes/regular_expressions.txt",
+		"/home/treerock/Dropbox/Notes/project_euler.txt",
+		"/home/treerock/Dropbox/Notes/prog_linked_list.txt",
+		"/home/treerock/Dropbox/Notes/plsql.md",
+		"/home/treerock/Dropbox/Notes/LionWiki.txt",
+		"/home/treerock/Dropbox/Notes/javascript.txt",
+		"/home/treerock/Dropbox/Notes/java_io.md",
+		"/home/treerock/Dropbox/Notes/Hash Table.txt",
+		"/home/treerock/Dropbox/Notes/git.txt",
+		"/home/treerock/Dropbox/Notes/flask.txt",
+		"/home/treerock/Dropbox/Notes/data_structures_alogirthms_2.txt",
+		"/home/treerock/Dropbox/Notes/data_structures_algorithms.txt",
+		"/home/treerock/Dropbox/Notes/databases.md",
+		"/home/treerock/Dropbox/Notes/cs_ullman.md",
+		"/home/treerock/Dropbox/Notes/computer/build_tools.md",
+		"/tmp/20.html",
+		"/tmp/dbxlZ9N2M9.html",
+		"/home/treerock/To Update/Files/History/scotland.txt",
+		"/home/treerock/To Update/Files/History/poland.txt",
+		"/home/treerock/To Update/Files/Language/grammar.txt",
+		"/home/treerock/To Update/Files/Language/polish.notes.txt",
+		"/home/treerock/To Update/Files/Maths/Probability.txt",
+		"/home/treerock/To Update/Files/Maths/data_visualisation.md",
+		"/home/treerock/To Update/Files/bitcoin.txt",
+		"/home/treerock/Dropbox/Notes/local/bitcoin.md",
+		"/home/treerock/To Update/Files/Uni/statistics.txt",
+		"/home/treerock/To Update/Files/Uni/Coursera/coursera_cqc/cqc_notes.md",
+		"/home/treerock/To Update/Files/Uni/Coursera/coursera_ds/datasci_course_materials/assignment1/output2.txt",
+		"/home/treerock/To Update/Files/Uni/Coursera/R Notes.txt",
+		"/home/treerock/To Update/Files/Uni/Coursera/Stats Lecture Notes.txt",
+		"/home/treerock/Dropbox/Notes/local/bitcoin.txt",
+		"/home/treerock/To Update/Files/events.txt",
+		"/home/treerock/To Update/Files/money_pension.txt",
+		"/home/treerock/To Update/Files/holiday.txt",
+		"/home/treerock/Dropbox/Notes/personal/backups.md",
+		"/home/treerock/Dropbox/Notes/it_systems/sa - sys_admin.txt",
+		"/home/treerock/Dropbox/Notes/it_systems/sa - vim.txt",
+		"/home/treerock/Dropbox/Notes/it_systems/linux_sysadmin.md",
+		"/home/treerock/Dropbox/Notes/it_systems/SA Image Files.txt",
+		"/home/treerock/Dropbox/Notes/it_systems/audio_backups.txt",
+		"/home/treerock/Dropbox/Notes/sa - linux.txt",
+		"/home/treerock/Dropbox/Notes/Unsorted/planning.md",
+		"/home/treerock/Dropbox/Learning/statistics/notes/css/style.css",
+		"/home/treerock/Dropbox/Projects/suth/css/style.css",
+		"/home/treerock/Dropbox/Projects/hfintegration/www.hfintegration.com/index.html",
+		"/home/treerock/Dropbox/Projects/hfintegration/www.hfintegration.com/site.css?v=",
+		"/home/treerock/Dropbox/Learning/statistics/notes/README.md",
+		"/home/treerock/Dropbox/Learning/statistics/notes/descriptive_stats.html",
+		"/home/treerock/Dropbox/Learning/DataSci-coursera/notes/statistics_main.html",
+		"/home/treerock/Dropbox/Learning/DataSci-coursera/notes/css/style.css",
+		"/home/treerock/Dropbox/Projects/hfintegration/www.hfintegration.com/knowledge.html",
+		"/home/treerock/Dropbox/Projects/hfintegration/www.hfintegration.com/experience.html",
+		"/home/treerock/Dropbox/Projects/hfintegration/www.hfintegration.com/home.html",
+		"/home/treerock/Dropbox/Projects/marslaw/src/bootstrap/bootstrap.css",
+		"/home/treerock/Dropbox/Projects/sandbox/convert/src/css/sandbox.less",
+		"/home/treerock/Dropbox/Projects/hfintegration/www.hfintegration.com/contact-us.html",
+		"/home/treerock/Dropbox/Projects/sandbox/convert/public/index.html",
+		"/home/treerock/Dropbox/Projects/sandbox/convert/src/css/project.less",
+		"/tmp/dbxl20HeB7.html",
+		"/home/treerock/.config/sublime-text-3/Packages/User/less2css.sublime-settings",
+		"/home/treerock/.config/sublime-text-3/Packages/Less2Css/less2css.sublime-settings",
+		"/home/treerock/Dropbox/Projects/sandbox/convert/public/css/sandbox.css",
+		"/home/treerock/Dropbox/Projects/marslaw/src/bootstrap/grid.less",
+		"/home/treerock/Dropbox/Projects/sandbox/convert/src/css/grid.less",
+		"/home/treerock/Dropbox/Projects/sandbox/convert/src/css/normalize.less",
+		"/home/treerock/Dropbox/Projects/sandbox/convert/public/css/main.css",
+		"/home/treerock/Dropbox/Projects/sandbox/convert/src/css/main.less",
+		"/home/treerock/Dropbox/Projects/sandbox/convert/src/bootstrap/bootstrap.less",
+		"/home/treerock/Dropbox/Projects/marslaw/src/bootstrap/normalize.less",
+		"/home/treerock/Dropbox/Projects/marslaw/src/bootstrap/bootstrap.less",
+		"/home/treerock/.config/sublime-text-3/Packages/LESS/LESS.sublime-settings",
+		"/home/treerock/.config/sublime-text-3/Packages/User/Default (Linux).sublime-keymap",
+		"/home/treerock/.config/sublime-text-3/Packages/Default/Default (Linux).sublime-keymap",
+		"/home/treerock/Dropbox/Projects/sandbox/convert/public/js/project.js",
+		"/home/treerock/Dropbox/Projects/sandbox/convert/src/css/sandbox.css",
+		"/home/treerock/Dropbox/Projects/sandbox/converting/public/index.html",
+		"/home/treerock/Dropbox/Projects/sandbox/converting/src/css/main.less",
+		"/home/treerock/Dropbox/Projects/sandbox/converting/public/js/project.js",
+		"/home/treerock/Dropbox/Projects/sandbox/converting/src/css/project.less",
+		"/home/treerock/Dropbox/Projects/sandbox/convert/src/index.html",
+		"/home/treerock/Dropbox/Projects/sandbox/convert/src/js/convert.js",
+		"/home/treerock/Dropbox/Projects/sandbox/convert/src/css/convert.css",
+		"/home/treerock/Dropbox/Projects/tests/mustache/docs/notes.md",
+		"/home/treerock/Dropbox/Projects/tests/less/src/css/project.less",
+		"/home/treerock/Dropbox/Projects/tests/less/public/css/main.css",
+		"/home/treerock/Dropbox/Projects/tests/less/src/css/main.less",
+		"/home/treerock/Dropbox/Projects/tests/less/src/bootstrap/bootstrap.less",
+		"/home/treerock/Dropbox/Projects/tests/less/docs/notes.md",
+		"/home/treerock/Dropbox/Projects/tests/less/src/css/main.css"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"word",
+			"request",
+			"s2",
+			"σ2",
+			"style",
+			"width",
+			"web-canvas-temp",
+			"width",
+			"desktop-container",
+			"width",
+			"width:",
+			"//",
+			"col-md-4",
+			"boostrap",
+			"@import \"",
+			"item-con",
+			"lead",
+			"sleeping",
+			"float",
+			"lead",
+			".nav",
+			"item",
+			"marslaw-logo-medium",
+			"text-tra",
+			"sleepi",
+			"lead",
+			"glyph",
+			">\n",
+			"font-fam",
+			"font-style",
+			"font-weight",
+			"rgba",
+			"class=\"button\"",
+			"width",
+			"map",
+			"input",
+			".row",
+			"50px",
+			".cover",
+			".inner",
+			"inner",
+			"border: 1px ",
+			"max-width",
+			"vertic",
+			"scrol",
+			"mars",
+			"bt_lar",
+			"bt-lar",
+			"url",
+			"img",
+			"src",
+			"url",
+			"  ",
+			"  M",
+			"  C",
+			"  Z",
+			"PROPDMGEXP",
+			"  ",
+			"     M",
+			"  C",
+			"  Z",
+			"\n",
+			"\"\"",
+			" ",
+			"    ",
+			"color",
+			"vertical",
+			"h2",
+			"padding",
+			"body",
+			"vertical",
+			"emulation",
+			"root",
+			"self.the_set",
+			"self.num_elements",
+			"num_elements",
+			"array_size",
+			"tab",
+			"print",
+			"len(list)",
+			"margin-bottom",
+			"	",
+			"console.log",
+			"\n        ",
+			"answer",
+			"start",
+			"dataOb",
+			"run",
+			"runChop",
+			"start",
+			"	",
+			"midpoint",
+			"end",
+			"start",
+			"  ",
+			"01/02/2007",
+			"MakeRe",
+			"makerecord",
+			"CHAPTER",
+			"chapter",
+			"button",
+			"font-size",
+			"font-size: small;",
+			"font-size",
+			"date",
+			"article",
+			"articel",
+			"background-image",
+			"url",
+			"border-top",
+			"navigation",
+			"url",
+			"backgroun",
+			"url",
+			"header-text-stack",
+			"cont",
+			".grid",
+			"owl",
+			"container",
+			"color:",
+			"Body Font Color",
+			"header-text-color",
+			"tr_brochure_customize_register",
+			"hex2rgb",
+			"-font-",
+			"header-font-color",
+			"child",
+			"first"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"s<sup>2</sup>",
+			"σ<sup>2</sup>",
+			"bootstrap",
+			"@import \"../boostrap/",
+			"",
+			"CROPDMGEXP",
+			"",
+			"\", \"",
+			"",
+			"self.word_list",
+			"self.word_list_size",
+			"bitarray_size",
+			"list_length",
+			"  ",
+			"this.midpoint",
+			"this.end",
+			"this.start",
+			"this.",
+			"",
+			"font-size: 1em;",
+			"-text-",
+			"'before_title'  => '<h2 class=\"widget-title\">',\n  'after_title'   => '</h2>',",
+			"tr_brochure",
+			"",
+			"articles",
+			"class=",
+			"",
+			"<article id",
+			"$(window)",
+			"location",
+			"'button'",
+			"meta",
+			"ctx",
+			"dist",
+			"time",
+			"now_str",
+			"main.loggedin",
+			"buildTaskList",
+			"task_list",
+			"$scope.data.tasks_done",
+			"$cookieStore",
+			"user_name",
+			"$scope.main.loggedin",
+			"$scope.main.id",
+			"$http",
+			"$scope",
+			"col-sm-9",
+			"col-sm-3",
+			"class=\"col-sm-2 control-label\"",
+			"form-group",
+			"j",
+			"update(",
+			"dd/mm/yyyy",
+			"'dd/mm/yyyy'",
+			"tasks",
+			"tasksDone",
+			".range-container",
+			"article",
+			"len",
+			".col-",
+			"##",
+			"",
+			"pos",
+			"radius",
+			"x",
+			"scaffoldWidth",
+			"scaffoldH",
+			"scaffoldHeight",
+			"Shaft",
+			"centre[1]",
+			"centre[0]",
+			"./bs/",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": false
+	},
+	"groups":
+	[
+		{
+			"selected": 3,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/home/treerock/Dropbox/Projects/feed-me/docs/feed-me.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6110,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6110,
+								6110
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/MarkdownEditing/Markdown.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"wrap_width": 0
+						},
+						"translation.x": 0.0,
+						"translation.y": 4040.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/home/treerock/Dropbox/Projects/feed-me/docs/rss.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 210,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7,
+								7
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/MarkdownEditing/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/home/treerock/Dropbox/Projects/feed-me/hello_scraping.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1402,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1108,
+								1108
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai.tmTheme",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 438.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/home/treerock/Dropbox/Projects/feed-me/feed_scraping.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1610,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								534,
+								534
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai.tmTheme",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 166.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/home/treerock/Dropbox/Projects/feed-me/json_output/output.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 97,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 34.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 326.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/lessc/lessc.sublime-build",
+	"project": "1601wt.sublime-project",
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/Dropbox/Projects/feed-me/json_output/output.json"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 177.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

@@ -1,6 +1,6 @@
 # Web Tooling & Automation
 
-## Introduction
+## 1. Introduction
 
 * Development environment
 
@@ -22,7 +22,7 @@ Failure Modes:
 
 * Avoid optimisations that aren’t worth it.
 
-## Productive Editing
+## 2. Productive Editing
 
 Setting up the development environment (mainly the editor).
 
@@ -46,7 +46,7 @@ In this course, using Sublime Text 3. This a popular, but paid for text editor. 
 
 * There should be a way of selecting all instances (Find should work)
 
-## Extending the Editor
+### Extending the Editor
 
 Editors can expand functionality.
 
@@ -66,7 +66,7 @@ Install:
 
 Remember to restart the editor.
 
-## Build Tools
+## 3. Build Tools
 
 Tools that you feed tasks, that they then carry out automatically. Web dev specific build tools are fairly new (even though they’ve been around for years in other fields).
 
@@ -103,7 +103,7 @@ gulpfile.js:
 
 The default task will run and do nothing. To run individual tasks, use gulp <task> <othertask>.
 
-## Using Build Tools to make CSS suck less
+### Using Build Tools to make CSS suck less
 
 _SASS_ is a CSS preprocessor. And _Autoprefixer_ automatically sets the correct browser prefixes.
 
@@ -168,7 +168,7 @@ Now we can test it out. In our main.scss files find the img selector that has al
 
 Now run gulp styles again at the terminal. Check the generated .css files and they should have the webkit prefixes added.
 
-## Gulp 'Watch'
+### Gulp 'Watch'
 
 Gulp has a feature called watch, which is an automatic trigger that looks for changes in your files and triggers and action. Save you having to run gulp from the cl everytime you want to build.
 
@@ -182,7 +182,7 @@ So this is looking for any changes to .scss files, then running the 'callback' f
 
 To run the default run gulp command from the cl, and from then on the watcher will be running, and any changes you make to the .scss file will trigger the 'styles' task.
 
-## Live Editing
+## 4. Live Editing
 
 Live Editing saves the repeated cycle of save - build - refresh to check changes you have made. It does this by setting a watcher to look for changes to your files, that communicates with a watcher in the browser, that refreshes or updates the page on the fly.
 
@@ -251,7 +251,143 @@ Basic live editing seems to work. Probably requires some modification to get run
       .pipe(browserSync.stream());
   });
 
-## Live Editing Node App
+### Live Editing Node App
 
+## 5. Preventing Distaster (Linting, Testing)
 
+### Linting
 
+Using the right tools can heavily improve the quality of you code.
+
+Linting is a way to check you JS code for errors. I can be done via your editor, your build process, or a hook in your version control.
+
+Linting can be heavily opinionated (no right or wrong so configure towards your style).
+
+Code style linting
+
+Syntax linting
+
+There are three popular linting tools for JS: JSlint, JSCS and ESLint. We'll stick with ESLint here.
+
+Linting helps:
+
+* Code style problems
+* Eliminate dead code or variables.
+
+Setting up eslint in Sublime Text.
+
+    npm install -g eslint
+
+Now install sublime-linter and sublime-linter-eslint.
+
+Eslint doesn't do anything until you configure it.
+
+    eslint --init
+
+This takes you through a wee wizard to configure eslint. It creates a eslintrc.js file with all the configuration details. You can have a local .eslintrc file that overrides the global settings.
+
+You can also set local eslint configration in the file you are editing. So, for example, you can have different linting for your nodejs files than for your browser files.
+
+In a comment on the file enter:
+
+    /*eslint-env node*/
+
+eslint can also be added to the Gulp build file.
+
+    npm install gulp-eslint
+
+Then in the gulpfile you need to include the package.
+
+    var eslint = require('gulp-eslint');
+
+    gulp.task('default', ['styles', 'lint'], function() {
+      gulp.watch('sass/**/*.scss', ['styles']);
+      gulp.watch('js/**/*.js', ['lint']);
+
+      browserSync.init({
+        server: './'
+      });
+    });
+
+    gulp.task('lint', function () {
+      return gulp.src(['js/**/*.js'])
+        // eslint() attaches the lint output to the eslint property
+        // of the file object so it can be used by other modules.
+        .pipe(eslint())
+        // eslint.format() outputs the lint results to the console.
+        // Alternatively use eslint.formatEach() (see Docs).
+        .pipe(eslint.format())
+        // To have the process exit with an error code (1) on
+        // lint error, return the stream and pipe to failOnError last.
+        .pipe(eslint.failOnError());
+    });
+
+### Unit Testing
+
+Unit test create the functionality of the code. 
+
+Tests can be automated. But tests have to be run in the browser.
+
+[Jasmine](http://jasmine.github.io/) uses a _headless browser_ for testing. _PhantomJs_ is a headless version of webkit.
+
+So phantom has to be installed first.
+
+Download from phantomjs website the prebuilt package : http://phantomjs.org/download.html then open a terminal and go to the Downloads folder
+
+    sudo mv phantomjs-1.8.1-linux-x86_64.tar.bz2 /usr/local/share/.
+    cd /usr/local/share/
+    sudo tar xjf phantomjs-1.8.1-linux-x86_64.tar.bz2
+    sudo ln -s /usr/local/share/phantomjs-1.8.1-linux-x86_64 /usr/local/share/phantomjs
+    sudo ln -s /usr/local/share/phantomjs/bin/phantomjs /usr/local/bin/phantomjs
+    phantomjs --version
+    > 2.1.1
+
+Now install gulp phantom
+
+    npm install gulp-jasmine-phantom
+
+Now add the appropriate require to your gulpfile.
+
+    var jasmine = require('gulp-jasmine-phantom');
+
+Now we can create a new task called tests:
+
+    gulp.task('tests', function(){
+        gulp.src('tests/spec/extraSpec.js')
+        .pipe(jasmine({
+            integration: true,
+            vendor: 'js/**/*.js'
+            }));
+        });
+
+Now it can be run as usual using 
+
+    gulp tests
+
+If you look at the tests:
+
+    describe('window height', function() {
+        it('returns window height', function() {
+            expect(getWindowHeight()).toEqual(jasmine.any(Number));
+        });
+    });
+
+Testing is covered in another course though.
+
+Since it's slow to run tests, they don't get integrated with the default build tasks.
+
+### Continuous Integration
+
+Continuous integration in the cloud is making sure your code can always be integrated with the repository, so you always have a stable build.
+
+Dev ops is covered in another course.
+
+CI is a good place to run unit tests.
+
+A cloud solution like jenkins watches the commits, and triggers terminal commands. So the test suite can run on every commit. Then emails if it fails.
+
+## 6. Optimisations
+
+Release, you can minify and concatenate the code. The build process can automate this.
+
+ 
